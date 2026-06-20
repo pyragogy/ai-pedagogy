@@ -16,40 +16,23 @@ relations:
     type: contradicts
 aliases: []
 ---
-## 1. Operational Definition
-Automation Bias describes the uncritical acceptance of AI-generated answers or recommendations as inherently correct, leading to a shutdown of active human verification.
+## 1. Definition
+Automation Bias is the cognitive failure mode where a user accepts an AI-generated answer as inherently correct due to the machine's authoritative tone, bypassing active human verification.
 
-## 2. Theoretical Foundation
-Well-documented in human-factors research (Parasuraman, Wickens) regarding aviation, medical systems, and automation complacency.
+## 2. Use Case
+Activated as a diagnostic warning when a learner rapidly accepts complex syntheses, code, or strategic recommendations without cross-referencing primary sources or testing edge cases.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 4.0
-- **Praxis Coordinate ($Y$):** 1.0 (Effort drop)
-- **Autonomy Coordinate ($Z$):** 3.0 (Subservient to machine)
+## 3. Human Role
+The user must actively notice their own suspension of disbelief, interrupt the reflexive acceptance of confident algorithmic prose, and reclaim the responsibility of fact-checking.
 
-## 4. Core Mechanics / Dynamics
-1. The machine provides an answer instantly.
-2. The user feels cognitive relief from the effort of thinking.
-3. The user assumes the machine has verified the logic, skipping personal analysis.
-4. Errors or biases in the machine output are propagated unchecked.
+## 4. AI Role
+The AI system should expose this failure pattern by occasionally injecting "pedagogically useful deficits" or explicitly requiring the user to cite external sources before accepting its output as final.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [General complacency trial logs]
+## 5. Friction
+The interruption mechanism involves structural roadblocks, such as demanding the human to verbally explain the AI's logic or explicitly confirm the underlying data sources before proceeding.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Active whenever the user uses high-automation templates without counter-verification steps.
+## 6. Risk
+If this pattern continues, the user suffers severe domain knowledge erosion, becoming incapable of spotting dangerous hallucinations or systemic errors in the output they approve.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: None (This is a risk itself)
-- Mitigated by: [[adolescent_sparring_arena]] / [[anti_convergence_loop]]
-
-## 8. Anti-Patterns
-- **Unverified Ingestion:** Accepting summarizing or synthesis tasks from an AI without reading the source documents.
-
-## 9. Observable Markers
-- Quick submission of generated texts without any edits or deletions.
-- Acceptance of conflicting logic during double-checks.
+## 7. Observable Markers
+Recovery is signaled when the user explicitly queries the AI's logic (e.g., "What are the sources for this claim?"), runs independent tests on the output, or rejects a plausible-sounding but flawed suggestion.

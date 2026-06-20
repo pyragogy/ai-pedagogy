@@ -16,39 +16,23 @@ relations:
     type: reinforces
 aliases: []
 ---
-## 1. Operational Definition
-Epistemic Dependency is a state where the learner ceases to possess an independent method of verifying truth, relying entirely on the AI's feedback to decide if a statement is true or false.
+## 1. Definition
+Epistemic Dependency is a state of intellectual paralysis where the user loses confidence in their independent judgment, becoming incapable of validating a belief or claim without explicit confirmation from the AI.
 
-## 2. Theoretical Foundation
-Draws from epistemological dependence studies and externalist theories of knowledge, exploring the dangers of trusting a single, non-transparent agent for all logical validations.
+## 2. Use Case
+Activated as a diagnostic warning when interaction logs show a high frequency of micro-validations, such as the user repeatedly asking "Is this correct?" for every intermediate step of a problem.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 5.0
-- **Praxis Coordinate ($Y$):** 0.5 (No independent calculation)
-- **Autonomy Coordinate ($Z$):** 1.0 (Completely dependent)
+## 3. Human Role
+The learner must recognize their anxiety over being wrong, interrupt the cycle of continuous algorithmic validation, and reclaim the courage to apply independent logical operators to verify truth.
 
-## 4. Core Mechanics / Dynamics
-1. The user writes a claim.
-2. Rather than checking sources or applying logical operators, they ask the AI "Is this right?"
-3. The AI approves or corrects.
-4. The user accepts the feedback without verifying the underlying rules, rendering them unable to defend the claim without the machine.
+## 4. AI Role
+The system exposes the dependency by tracking validation loops and occasionally shifting into a "reflective silence," refusing to confirm the user's statement and instead asking, "How would you prove this without me?"
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** Medium
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Source verification testing logs]
+## 5. Friction
+The risk loop is broken by disabling the AI's confirmation function, forcing the user to commit to a decision or mathematical proof relying solely on their own internal verification mechanisms.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Triggered when the user asks the machine to edit, verify, or grade every intermediate sentence.
+## 6. Risk
+If the dependency solidifies, the user becomes completely helpless in offline environments or unfamiliar situations, masking profound incompetence behind the illusion of machine-assisted fluency.
 
-## 7. Cognitive Risk Mitigations
-- Mitigated by: [[evidence_demand]] / [[praxis_to_autonomy_bridge]]
-
-## 8. Anti-Patterns
-- **The Blind Follower:** Submitting answers to problems without understanding the calculations, solely because the AI tool said the final number was correct.
-
-## 9. Observable Markers
-- Absolute helplessness when the AI is deactivated or disconnected.
-- High frequency of "is this correct?" prompts in workspace history logs.
+## 7. Observable Markers
+Recovery is signaled when the user stops asking for confirmation on intermediate steps, submits completed work with internal consistency checks, and defends their logic independently of the machine's opinion.

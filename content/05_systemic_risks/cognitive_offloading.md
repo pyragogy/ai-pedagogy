@@ -16,39 +16,23 @@ relations:
     type: reinforces
 aliases: []
 ---
-## 1. Operational Definition
-Cognitive Offloading is the physical outsourcing of inner monologue, structural outlining, and logical verification steps to a generative assistant, leaving the human brain in a purely reactive/ingestive role.
+## 1. Definition
+Cognitive Offloading is the physical outsourcing of inner monologue, structural outlining, and logical heavy-lifting to a generative assistant, leaving the human brain in a purely reactive and ingestive state.
 
-## 2. Theoretical Foundation
-Draws from active memory research (transactive memory), digital amnesia, and cognitive ergonomics, showing that when retrieval/generation is outsourced, long-term retention drops to near zero.
+## 2. Use Case
+Activated as a diagnostic warning when a learner commands the machine to generate first drafts, brainstorm ideas, or outline structures before attempting any independent cognitive effort.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 3.5
-- **Praxis Coordinate ($Y$):** 0.5 (Absolute minimum effort)
-- **Autonomy Coordinate ($Z$):** 2.0
+## 3. Human Role
+The learner must recognize the urge to bypass the initial "blank page" struggle, interrupt the immediate delegation of structural thought, and reclaim the act of initial synthesis.
 
-## 4. Core Mechanics / Dynamics
-1. The user faces a difficult writing or reasoning task.
-2. Rather than attempting a draft (no active cognitive effort), they prompt the AI to write it.
-3. The AI generates the structure and arguments.
-4. The user's internal cognitive paths (and synaptic wiring) for structuring thoughts are never activated.
+## 4. AI Role
+The system exposes this pattern by measuring the ratio of human input to machine output, refusing to generate full frameworks from empty prompts, and demanding the user provide an initial scaffold first.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Outsourcing recall test groups]
+## 5. Friction
+The risk loop is broken by blocking zero-shot generation requests for complex tasks, forcing the user to submit a minimum threshold of original thought or a partial outline before the AI provides assistance.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Triggers when the user asks the machine to summarize or write drafts before they have written a single sentence themselves.
+## 6. Risk
+If the offloading continues, the learner loses the biological capability to structure complex arguments from scratch, leading to a permanent drop in long-term memory retention and independent synthesis skills.
 
-## 7. Cognitive Risk Mitigations
-- Mitigated by: [[learning_cycle]] / [[friction_escalation_ladder]]
-
-## 8. Anti-Patterns
-- **The Empty Sandbox:** Prompting the machine to do all brainstorming before the user has explored their own raw thoughts.
-
-## 9. Observable Markers
-- Rapid decrease in user-authored drafts and outlines.
-- Complete inability to recall main concepts 24 hours after a session.
+## 7. Observable Markers
+Recovery is signaled when the user submits detailed, structured prompts containing their own original hypotheses, rather than asking the machine "Give me 10 ideas about X."
