@@ -121,6 +121,33 @@ function audit() {
       }
     }
 
+    // Check for the 7 required sections
+    const markdownBody = content.substring(match[0].length);
+    const requiredSections = [
+      "## 1. Definizione",
+      "## 2. Uso",
+      "## 3. Ruolo Umano",
+      "## 4. Ruolo AI",
+      "## 5. Frizione",
+      "## 6. Rischio",
+      "## 7. Marker Osservabili"
+    ];
+
+    const missingSections = requiredSections.filter(section => !markdownBody.includes(section));
+    
+    if (missingSections.length > 0) {
+      console.error(`\x1b[31m✗ ${relativePath} is missing required sections: ${missingSections.join(', ')}\x1b[0m`);
+      errorCount++;
+      return;
+    }
+
+    // Ensure 'Core Analysis' is removed
+    if (markdownBody.includes('## Core Analysis')) {
+      console.error(`\x1b[31m✗ ${relativePath} still contains legacy '## Core Analysis' section\x1b[0m`);
+      errorCount++;
+      return;
+    }
+
     successCount++;
   });
 

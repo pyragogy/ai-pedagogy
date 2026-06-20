@@ -16,14 +16,23 @@ relations:
   - target: "[[unexamined_ai_answers]]"
     type: threatens
 ---
----
-## Core Analysis
+## 1. Definizione
+Il protocollo dei Reasoning Trails è la pratica di tracciare, preservare e valutare sistematicamente i passaggi intermedi del processo cognitivo ibrido (umano-AI), spostando la metrica di valutazione dal prodotto testuale finale alla mappa del ragionamento impiegato.
 
-The practice of Reasoning Trails constitutes the operational backbone for evaluating and anchoring critical thinking in an automated age. Rather than relying on static, post-facto examination products, this methodology captures and values the live documentation of the cognitive path through systematic portfolios, process annotations, and iterative peer revisions. In short, it evaluates the process, not just the product. Students explicitly preserve intermediate drafts, raw prompts, AI critique responses, and structural adjustments, making every single step of their logic completely transparent.
+## 2. Uso
+Si attiva nella stesura di elaborati complessi, decisioni di design, o cicli di revisione tra pari, nei casi in cui l'autenticità e la solidità dell'indagine umana debbano essere validate in presenza di strumenti autogenerativi.
 
-- **Learning Portfolios:** Long-term collections of work evidence that track the evolutionary trajectory of concepts and reward continuous, reflective dedication.
-- **Reasoning Trails:** Detailed metadata and side-notes tracing exactly how a final conclusion was reached (sources crossed, specific prompts fed to the AI, mathematical verifications, etc.), making human thought fully inspectable.
-- **Peer Critique:** Collaborative loops where fellow learners audit each other's work to identify hidden biases or structural weaknesses, generating productive social friction.
-- **Iterative Revision:** The continuous cycle of integrating feedback and reflecting on mistakes. This forces additional friction layers, actively discouraging copy-paste shortcuts and driving authentic mastery.
+## 3. Ruolo Umano
+Preserva attivamente le bozze intermedie, argomenta esplicitamente le variazioni nei prompt, annota i dubbi metodologici e difende verbalmente o per iscritto le ragioni di accettazione o rigetto dell'output dell'agente.
 
-By evaluating these intermediate milestones and demanding oral defense of the reasoning trail, the educational framework establishes an unyielding guardrail: it renders automated laziness instantly visible and ensures that human thinking remains active, alive, and thoroughly verified.
+## 4. Ruolo AI
+Produce l'output speculativo che viene sottoposto a scrutinio. Funziona da specchio espansivo, generando materiale su cui l'umano deve necessariamente operare tagli, selezioni e validazioni logiche.
+
+## 5. Frizione
+Rende impraticabile e immediatamente evidente l'automazione fluida "copia-e-incolla", imponendo il carico cognitivo dell'archiviazione critica e costringendo alla spiegazione dei nessi causali prima della sintesi.
+
+## 6. Rischio
+Priva di Reasoning Trails, la valutazione fallisce: premia la produzione formale dell'agente nascondendo [[unexamined_ai_answers]] e oscurando la mancanza di comprensione profonda da parte dell'utente.
+
+## 7. Marker Osservabili
+Il documento finale è accompagnato da metadati strutturati o un file di log in cui il discente cita i prompt fallimentari e dimostra, riga per riga, dove e perché è intervenuto per correggere le scorciatoie proposte dalla macchina.

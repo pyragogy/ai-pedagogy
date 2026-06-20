@@ -11,19 +11,27 @@ praxis_index: 5.5
 autonomy_index: 1.5
 phase: praxis
 status: operational
-description: "*None (Foundational Node)*  --- ## Core Analysis  The Learning
-  Cycle is a guided, iterative framework that leads the learner through distinct
-  phases of inquiry, friction, and structured reflection."
+description: ""
 relations: []
 ---
 ---
-## Core Analysis
+## 1. Definizione
+Il Learning Cycle è un framework iterativo e guidato che struttura l'indagine in 6 fasi specifiche (Notice, Ask, Generate, Test, Reflect, Share) per trasformare l'interazione con l'AI da assorbimento passivo a scoperta attiva e misurabile.
 
-The Learning Cycle is a guided, iterative framework that leads the learner through distinct phases of inquiry, friction, and structured reflection. This approach shifts young minds away from passive absorption toward active discovery, pushing them to raise questions, investigate anomalies, and test ideas in real-world scenarios. The complete loop cycles through six specific steps: Notice, Ask, Generate, Test, Reflect, and Share—each compounding cognitive engagement under the scaffolded guidance of an educator or facilitator.
+## 2. Uso
+Si attiva quando il discente incontra un nuovo dominio o un'anomalia concettuale, richiedendo un percorso rigoroso per convertire la curiosità iniziale in ipotesi verificabili.
 
-1. **Notice:** Carefully observing data or phenomena to detect underlying patterns and anomalies. The facilitator introduces a surprising stimulus, asking, "What do you notice? What questions does this spark?" to activate prior knowledge.
-2. **Ask:** Formulating targeted, meaningful questions in response to initial observations. This phase of structured curiosity narrows the scope of investigation and deepens initial intent.
-3. **Generate:** Developing hypotheses, creative ideas, or alternative paths (brainstorming). The student blends personal intuition with controlled AI queries, fostering creativity within an intentional boundaries layout.
-4. **Test:** Verifying hypotheses through active experimentation, tracking, or simulations. This stage introduces the cognitive friction necessary for deep neural integration: learning does not happen when the task is trivial; it occurs precisely at the friction points. Forcing ideas against constraints counters the urge to delegate thinking to automated systems.
-5. **Reflect:** Analyzing the obtained outcomes and tracing one's own mental process. The learner critically evaluates what was discovered, flags logical missteps, and solidifies metacognitive growth.
-6. **Share:** Presenting findings and insights to peers, teachers, or an external audience. This closing phase solidifies communication skills; explaining work to a public audience forces structural self-assessment and makes intrinsic thinking visible, closing the loop through collaborative awareness.
+## 3. Ruolo Umano
+Formula le domande iniziali, sviluppa ipotesi originali incrociando l'intuizione con i dati emersi, valuta criticamente i fallimenti durante il test e sintetizza la scoperta per argomentarla pubblicamente.
+
+## 4. Ruolo AI
+Risponde alle esplorazioni introducendo vincoli metodologici e fornendo scenari di simulazione. Restituisce feedback limitato o parziale per forzare l'esplorazione autonoma dello studente, astenendosi dal consegnare la soluzione finale.
+
+## 5. Frizione
+Interrompe il riflesso di esternalizzare il pensiero euristico, costringendo le idee umane a urtare contro i limiti strutturali del sistema durante la fase di verifica ("Test") e bloccando l'accesso alla risposta facile.
+
+## 6. Rischio
+Senza questo ciclo chiuso, lo studente consolida una dipendenza epistemica silente: consuma l'output come verità pre-digerita senza costruire e consolidare reti neurali logiche proprie.
+
+## 7. Marker Osservabili
+Durante la fase di condivisione, lo studente è in grado di ricostruire pubblicamente i propri errori metodologici, difendendo le ragioni precise che lo hanno costretto ad aggiustare le ipotesi di partenza.

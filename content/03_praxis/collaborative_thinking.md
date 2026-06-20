@@ -11,14 +11,28 @@ praxis_index: 6.5
 autonomy_index: 8.5
 phase: praxis
 status: operational
-description: "- **CONTRADICTS**: [[ai_over_reliance]] (Weight: 1."
+description: ""
 relations:
   - target: "[[ai_over_reliance]]"
     type: contradicts
 ---
----
-## Core Analysis
+## 1. Definizione
+Il Collaborative Prototyping è il protocollo di co-creazione in cui l'agente AI opera come analista trasversale e partner strategico all'interno di un ambiente di progettazione o ingegneria complesso. Non automatizza l'esecuzione silenziosa, ma esegue un'azione congiunta (hybrid intelligence).
 
-Collaborative Prototyping operationalizes human-AI co-agency within highly complex, multi-dimensional design and engineering environments. Optimized for adult professionals and lifelong learners, this practice rejects the paradigm of quiet task automation, shifting the interaction model to one of joint action and hybrid intelligence. Within this framework, the AI agent is deployed as a cross-functional co-designer, co-analyst, and strategic partner, operating alongside human experts within a shared, interactive workspace.
+## 2. Uso
+Si attiva in ambienti professionali e di lifelong learning quando il professionista deve scalare sistemi complessi, generare varianti di design o esplorare edge case strutturali.
 
-To prevent the expertise reversal effect—wherein highly directive scaffolding degrades the performance of experienced practitioners—the collaborative agent is designed to introduce scaffolded cognitive friction. Operating as a computational Devil's Advocate, the AI agent uses multi-agent architectures to generate divergent design variations, surface edge cases, and challenge human assumptions in real time. The human designer remains the primary strategic driver, injecting qualitative judgment, aesthetic taste, and ethical alignment, while the AI manages structural consistency checks, token verification, and rapid pattern detection. This continuous, bidirectional negotiation ensures that high-level human decision-making is expanded and refined rather than bypassed, allowing teams to scale complex systems without accumulating cognitive or technical debt.
+## 3. Ruolo Umano
+Mantiene il controllo strategico primario. Inietta giudizio qualitativo, gusto estetico e allineamento etico alle decisioni. Il livello più alto della decisione tecnica e morale non è delegabile.
+
+## 4. Ruolo AI
+Funziona da "Avvocato del Diavolo" computazionale. Genera varianti divergenti, esegue controlli di coerenza strutturale, rileva pattern rapidi e sfida attivamente le assunzioni umane in tempo reale.
+
+## 5. Frizione
+Interrompe l'automazione invisibile e l'Expertise Reversal Effect, inserendo ostacoli cognitivi calibrati che forzano l'esperto a giustificare le scelte invece di appoggiarsi passivamente all'output algoritmico.
+
+## 6. Rischio
+Se manca questa pratica, si incorre in [[ai_over_reliance]] e debito cognitivo: il professionista smette di comprendere l'architettura profonda delle soluzioni che approva.
+
+## 7. Marker Osservabili
+Il professionista integra, rifiuta parzialmente e documenta le versioni generate dall'AI, dimostrando con modifiche dirette al codice o al design di aver vagliato criticamente l'output prima dell'uso finale.
