@@ -17,8 +17,23 @@ relations:
     type: threatens
 ---
 ---
-## Core Analysis
+## 1. Definition
+Unexamined AI Answers is the specific failure mode where a user accepts and integrates an algorithmic response without interrogating its underlying assumptions, primary evidence, or conceptual framing.
 
-Passively accepting AI responses without forensic scrutiny induces cognitive laziness and atrophies critical capabilities.
+## 2. Use Case
+Activated as a diagnostic warning when a user immediately utilizes a generated fact, code snippet, or argument without attempting to dissect the premise that produced it.
 
-NOTE: Uncritical acceptance represents the highest level of cognitive atrophy and dependence described in the Cartesian model.
+## 3. Human Role
+The learner must notice their passive ingestion, interrupt the seamless copy-paste reflex, and reclaim the forensic role of dissecting *how* and *why* the machine arrived at that specific conclusion.
+
+## 4. AI Role
+The system exposes this pattern by occasionally omitting primary sources, providing logically fragile premises, or utilizing an Epistemic Mirror to force the user to identify the unstated assumptions.
+
+## 5. Friction
+The interruption mechanism involves structural delays, demanding that the user explicitly cite an independent source or verbally reconstruct the causal chain before the answer can be formally integrated.
+
+## 6. Risk
+If this pattern continues, the user builds their knowledge base on unquestioned and potentially hallucinated foundations, leaving them vulnerable to severe logical errors when the context shifts.
+
+## 7. Observable Markers
+Recovery is signaled when the user actively challenges the AI's response (e.g., "What evidence supports this specific framing?"), or manually tests the code/logic before accepting the output.

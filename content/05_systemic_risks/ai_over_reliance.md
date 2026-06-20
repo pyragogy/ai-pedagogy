@@ -28,43 +28,23 @@ relations:
     type: "reinforces"
 aliases: []
 ---
-## 1. Operational Definition
-AI Over-Reliance is the systemic collapse of human cognitive sovereignty across the developmental continuum, driven by conversational interfaces that exploit human cognitive miserliness.
+## 1. Definition
+AI Over-Reliance is the overarching meta-risk and systemic collapse of human cognitive sovereignty, occurring when learners or professionals chronically substitute machine outputs for active, independent reasoning.
 
-## 2. Theoretical Foundation
-Driven by a commercial design dogma that prioritizes zero-friction experiences. By providing immediate, highly fluent, and authoritative solutions, these systems satisfy the user's need for cognitive closure while bypassing the active mental struggle required for memory encoding.
+## 2. Use Case
+Activated as a global diagnostic warning when the entire workflow is governed by the pursuit of "zero-friction" execution, systematically bypassing the struggle required for memory encoding and critical evaluation.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 5.5
-- **Praxis Coordinate ($Y$):** 1.0 (Effort collapse)
-- **Autonomy Coordinate ($Z$):** 0.5 (Subservient dependency)
+## 3. Human Role
+The user must recognize the overall atrophy of their autonomous capabilities, interrupt the habitual outsourcing of cognitive labor, and actively reclaim the highest levels of technical and ethical decision-making.
 
-## 4. Core Mechanics / Dynamics
-This macro-risk operates through seven specific, granular failure modes:
-1. **[[automation_bias]]**: Uncritical acceptance of machine recommendations.
-2. **[[fluency_heuristic]]**: Mistaking stylistic eloquence for factual correctness.
-3. **[[cognitive_offloading]]**: Outsourcing outlining and drafting prematurely.
-4. **[[convergence_bias]]**: Homogenizing original ideas to match LLM consensus.
-5. **[[epistemic_dependency]]**: Relying entirely on machine validation.
-6. **[[performative_understanding]]**: The illusion of competence from reading clean summaries.
-7. **[[cognitive_debt]]**: Long-term decay of memory, focus, and critical thinking.
+## 4. AI Role
+The system exposes this meta-failure by tracking long-term dependency metrics and enforcing macro-frictions, refusing to act as a silent, frictionless executor across multiple domains simultaneously.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Long-term dependency trial logs]
+## 5. Friction
+The interruption mechanism requires a radical workflow redesign, instituting mandatory "unplugged" phases or accountability checkpoints where the user must perform complex tasks entirely without AI assistance.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Active in all workspace sessions unless mitigated by strict friction protocols.
+## 6. Risk
+If this macro-pattern continues, the human becomes entirely subservient to the machine, suffering a permanent loss of sovereign critical thought, focus endurance, and the ability to solve novel problems.
 
-## 7. Cognitive Risk Mitigations
-- Mitigated by: [[learning_cycle]] / [[friction_escalation_ladder]] / [[anti_convergence_loop]]
-
-## 8. Anti-Patterns
-- **The Frictionless Sandbox:** Building education platforms that remove all struggle, thinking, and difficulty from the student's workspace.
-
-## 9. Observable Markers
-- Immediate decline in independent writing performance.
-- Inability to solve reasoning challenges without active chatbot prompts.
+## 7. Observable Markers
+Recovery is signaled when the user intentionally designs workflows that include high-friction human-only phases, and successfully navigates complex problems without resorting to generative tools.

@@ -16,39 +16,23 @@ relations:
     type: reinforces
 aliases: []
 ---
-## 1. Operational Definition
-The Fluency Heuristic is a cognitive shortcut where clean typography, perfect grammar, and a confident tone are mistaken for factual accuracy and intellectual depth.
+## 1. Definition
+The Fluency Heuristic is a cognitive trap where a user mistakes the grammatical smoothness, clean typography, and authoritative tone of an AI output for objective truth, factual accuracy, or intellectual depth.
 
-## 2. Theoretical Foundation
-Rooted in cognitive psychology studies on processing fluency, truth effects, and persuasive communication styles (Kahneman's System 1 thinking).
+## 2. Use Case
+Activated as a diagnostic warning when a user rates a highly polished but logically shallow text as superior to a fragmented but highly rigorous human draft.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 4.5
-- **Praxis Coordinate ($Y$):** 1.0 (Low effort processing)
-- **Autonomy Coordinate ($Z$):** 2.0
+## 3. Human Role
+The user must recognize their emotional vulnerability to eloquent prose, interrupt the "halo effect" of good grammar, and reclaim the ability to evaluate arguments based purely on structural rigor.
 
-## 4. Core Mechanics / Dynamics
-1. The AI outputs structurally flawless, authoritative, and polite text.
-2. The user processes the fluent text easily, triggering positive emotional affect.
-3. This processing ease is incorrectly interpreted as semantic truth.
-4. Hallucinations or circular arguments are absorbed because they "sound right."
+## 4. AI Role
+The system exposes this bias by generating beautifully written but factually contradictory statements, or by deliberately lowering its stylistic fluency to force the user to concentrate on the raw data.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Linguistic persuasion test sets]
+## 5. Friction
+The risk loop is broken by stripping the AI's output of formatting, polite conversational wrappers, and persuasive rhetoric, forcing the user to evaluate bare propositions.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Triggered when users rate fluent, grammatically correct essays higher than fragmented, high-effort drafts.
+## 6. Risk
+If this heuristic dominates, the user loses the ability to detect sophisticated misinformation, becoming easily manipulated by any system that outputs confident and stylistically perfect prose.
 
-## 7. Cognitive Risk Mitigations
-- Mitigated by: [[evidence_demand]] / [[pattern_perturbator]]
-
-## 8. Anti-Patterns
-- **The Eloquence Trap:** Assuming that because an explanation is eloquently written, it must be correct.
-
-## 9. Observable Markers
-- User doesn't verify references or citations in a highly polished output.
-- User rates stylistic clarity over logical rigor.
+## 7. Observable Markers
+Recovery is signaled when the user ignores the stylistic polish of the response and explicitly attacks the underlying logic or missing citations.
