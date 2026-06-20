@@ -1,7 +1,7 @@
 ---
 id: "blueprint"
 title: "Architectural Blueprint"
-draft: true
+status: operational
 ---
 ```dataview
 TABLE kind as "Type", ontogeny as "Ontogeny (X)", praxis as "Friction (Y)", autonomy as "Autonomy (Z)", tags as "Category Tags"

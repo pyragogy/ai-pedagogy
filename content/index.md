@@ -3,32 +3,43 @@ title: AI-Augmented Human Thinking Pedagogy
 layout: list
 ---
 
-This ecosystem is an **active cognitive extension** and an **operational framework** dedicated to **Pyragogy**: the theoretical-practical framework for human-AI co-creation and augmented learning.
+What happens to human cognition when a machine can generate a plausible answer in under a second?
 
-The site is not a static archive, but an interactive map designed to hack traditional learning processes through the intentional use of machines as academic peers.
-
-### ⚡ What is this ecosystem for?
-* **Preserving Cognitive Sovereignty**: Refuse passive AI automation. Here, the algorithm does not perform tasks on behalf of humans, but acts as a critical mirror and a driver of **Cognitive Friction**.
-* **Mapping the Evolution of Co-Agency**: Track the development of hybrid intelligence across three fundamental Cartesian coordinates: **Ontogeny** (evolutionary stage), **Praxis** (action/friction level), and **Autonomy** (user decision-making sovereignty).
-* **Exploring Epistemic Relations**: Use the dynamic Graph View to visualize in real time how concepts reinforce, contradict, or isolate each other within the network of knowledge.
+This project maps one specific response to that question: a framework for learning *with* AI without thinking *through* it. The framework is called **Pyragogy**. It rests on a single bet — that the right amount of **cognitive friction**, applied at the right moment, is what keeps the human in the loop.
 
 ---
 
 ## 📚 The Core Bookshelf
-Immediate access to the three manual pillars of the Handbook:
-* 📖 **Early Development**: [[embodied_foundation]] — *Sensory-motor stage and development of early mental schemas (Ontogeny < 2.5).*
-* 📖 **Co-Agency & Socratic Sparring**: [[adolescent_sparring_arena]] — *The arena of debate, independent thinking, and bias management.*
-* 📖 **Lifelong Learning**: [[adult_reflective_practice]] — *Reflective practice in real work and professional hybrid intelligence.*
+
+Three handbooks, three developmental stages:
+
+| Stage | Text | What it covers |
+|---|---|---|
+| Early development | [[embodied_foundation]] | Sensory-motor learning, schema formation, ontogeny < 2.5 |
+| Adolescence | [[adolescent_sparring_arena]] | Debate, independent thinking, bias recognition |
+| Adult practice | [[adult_reflective_practice]] | Professional hybrid intelligence, reflective practice |
 
 ---
 
 ## 🗺️ The Evolutionary Syllabus
-Knowledge is structured in the sidebar according to a strict evolutionary taxonomy:
-1. **`01_foundations`**: The epistemic principles of Pyragogy and Cartesian axis metrics.
-2. **`02_ontogeny`**: Early childhood patterns, primary learning portals, and embodied foundations.
-3. **`03_praxis`**: Socratic sparring, reasoning trails, and active co-agency.
-4. **`04_autonomy`**: Reflective practice and student autonomy development.
-5. **`05_systemic_risks`**: Algorithmic comfort, offloading, and cognitive atrophy.
-6. **`06_protocols`**: Practical cognitive friction escalation loops.
-7. **`07_cases`**: Field study case logs and empirical validations.
-8. **`08_references`**: Evidence maps and project bibliography.
+
+The sidebar organises knowledge by developmental layer. Read it as a sequence or jump to whatever is relevant:
+
+1. **[Foundations](01_foundations)** — The epistemic principles and the axis system that maps the whole framework.
+2. **[Ontogeny](02_ontogeny)** — Early childhood learning patterns and the embodied cognitive base.
+3. **[Praxis](03_praxis)** — Active co-agency: Socratic sparring, reasoning trails, collaborative prototyping.
+4. **[Autonomy](04_autonomy)** — How learners graduate from scaffolding to independent judgment.
+5. **[Systemic Risks](05_systemic_risks)** — Automation bias, cognitive offloading, epistemic dependency, fluency heuristic.
+6. **[Protocols](06_protocols)** — Concrete friction escalation loops and anti-convergence routines.
+7. **[Cases](07_cases)** — Field study logs and empirical validations.
+8. **[References](08_references)** — Evidence maps and bibliography.
+
+---
+
+## ⚡ What this is for
+
+The graph at the right is not decorative. Every node has coordinates on three axes — **Ontogeny** (developmental stage), **Praxis** (action/friction intensity), **Autonomy** (decision-making sovereignty) — and every edge is typed: *reinforces*, *contradicts*, *enables*, *threatens*.
+
+The goal is a knowledge map where relations are computable, not just implied. Where a claim about cognitive risk is connected to the practice that mitigates it, and where the practice is connected to the developmental phase where it applies.
+
+Use the search, follow the graph, break a link, and file an issue.
