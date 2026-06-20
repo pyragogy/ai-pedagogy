@@ -1,0 +1,16 @@
+# Quartz & Node compilation targets
+node_modules/
+.quartz-cache/
+.quartz/
+public/
+
+# Obsidian system files
+.obsidian/workspace.json
+.obsidian/graph.json
+.obsidian/caches/
+.obsidian/plugins/
+.obsidian/themes/
+
+# OS junk
+.DS_Store
+Thumbs.db

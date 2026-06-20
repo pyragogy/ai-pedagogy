@@ -1,0 +1,118 @@
+# System Audit Report: AI-Pedagogy Digital Garden
+
+**Date:** June 20, 2026  
+**Project Path:** `/home/blubar/Scrivania/ai-pedagogy`  
+**SSG Framework:** Quartz v5.0.0 (Quartz 4 TSX/Preact-based architecture)  
+
+---
+
+## 1. Core Project Identity & Architecture
+
+### Conceptual & Technical Framework
+The `ai-pedagogy` project is structured as a **local Obsidian Vault** that serves as a digital garden and cognitive extension. It is compiled and served as a static site using **Quartz v5.0.0** (built on a Preact, lightningcss, and unified/remark processing framework). 
+
+Conceptually, the vault details **Pyragogy**—an evolutionary handbook mapping pedagogical frameworks, practices, and capabilities designed to preserve human intellectual sovereignty, intentional agency, and effortful reasoning (cognitive friction) in an age of automated AI scaffolding.
+
+### Exact Directory Layout Verification
+The root directory `/home/blubar/Scrivania/ai-pedagogy` contains the following critical system and structure files:
+*   [quartz.config.yaml](file:///home/blubar/Scrivania/ai-pedagogy/quartz.config.yaml): Defines configuration options, plugin parameters, color theme, typography, and page layout structure.
+*   [package.json](file:///home/blubar/Scrivania/ai-pedagogy/package.json): Handles dependencies (Preact, chokidar, lightningcss, workerpool, etc.) and execution scripts (`quartz` bootstrap, build, test). Engines require `node >=22` and `npm >=10.9.2`.
+*   [quartz/styles/custom.scss](file:///home/blubar/Scrivania/ai-pedagogy/quartz/styles/custom.scss): Declares custom Sass style overrides targeting layout alignment, graph sizing, transitions, and hover interactions.
+*   `.obsidian/`: Contains configuration files (`app.json`, `core-plugins.json`, `graph.json`, etc.) that configure the folder as a native Obsidian Vault.
+*   `content/`: Root folder for all markdown documentation, divided into evolutionary taxonomy paths.
+
+---
+
+## 2. Visual System & Layout Audit
+
+### Theme & Color Palette
+The color theme is defined in `quartz.config.yaml` under `theme.colors`. Notably, both `lightMode` and `darkMode` are mapped to the same dark aesthetic palette:
+
+| HSL/Hex Token | Category Name | Color Role in UI |
+|---|---|---|
+| `#050506` | `light` | Main page background (Near-black) |
+| `#18181b` | `lightgray` | Borders, divider lines, and component containers |
+| `#52525b` | `gray` | Meta-text, reading time, dates, and subtitle lines |
+| `#d4d4d8` | `darkgray` | Main body/paragraph text (High-contrast light gray) |
+| `#ffffff` | `dark` | Primary page headers (`h1`, `h2`), page titles, and strong text |
+| `#ff9e00` | `secondary` | Links, folder tree nodes, active files (Vibrant Amber/Orange) |
+| `#ffb703` | `tertiary` | Backlink items, hover states, tag links, graph nodes (Gold/Yellow) |
+| `rgba(255, 158, 0, 0.06)` | `highlight` | Block quotes and code block backgrounds |
+| `#b3aa0288` | `textHighlight` | Highlighted search results (Olive-Yellow) |
+
+### Typography
+Font families are fetched via Google Fonts (`fontOrigin: googleFonts` and `cdnCaching: true` enabled):
+*   **Header Font:** `Fraunces`
+*   **Body Font:** `Inter`
+*   **Code Font:** `JetBrains Mono`
+
+### Layout Balancing & Structural Overrides
+The site layout balances information across a three-column desktop presentation:
+1.  **Left Sidebar (Navigation):** Houses the `page-title` ("AI-Augmented Pedagogy Handbook"), the search bar (`search`, grouped in toolbar), darkmode/reader-mode controls, and the `explorer` plugin (configured with the title `"Syllabus"`, collapsed by default).
+2.  **Central Content Column:** Includes a `breadcrumbs` trail (omitted on index pages), `article-title`, `note-properties` (displays metadata for `description`, `tags`, and `aliases`), and `content-meta` (reading speed metadata), followed by the compiled markdown body.
+3.  **Right Interactive Sidebar:** Hosts the interactive network `graph` visualization, `table-of-contents` index, and `backlinks`.
+
+### Layout Stability & Transitions (`custom.scss`)
+*   **Sidebar Alignment:** Overrides on `body .page > .sidebar` force a reset of `margin-top: 0 !important` and add a `padding-top: 1rem !important`. Children components are restricted to `margin-bottom: 1.5rem` to prevent vertical alignment mismatch and height jitter during load.
+*   **Graph Bounds:** The class `.graph-outer` is strictly bounded to `height: 200px !important; margin: 0 !important;` to stabilize the sidebar space and prevent Cumulative Layout Shift (CLS) when the SVG elements compile.
+*   **Micro-Animations:**
+    *   Syllabus explorer directories and files shift padding (`padding-left: 6px`) and shift text color to `var(--tertiary)` (Gold) over a `0.2s` transition on hover.
+    *   Folder child bullets (`ul.tree-item-children`) transition their left-border color to `var(--secondary)` (Amber) on hover.
+    *   Graph nodes (`svg circle`) expand their radius `r: 6px` on hover and change their colors to gold fill and amber stroke over a cubic-bezier transition.
+
+---
+
+## 3. Content Ingestion & Taxonomy Structure
+
+### Evolutionary Folder Taxonomy
+The `content/` files are structured into 4 folders representing an ontogenetic sequence of cognitive growth:
+1.  `01_foundations/`: Contains foundational configuration blueprints.
+2.  `02_early_development/`: Addresses early-childhood sensory-motor portals.
+3.  `03_co_agency/`: Details human-AI co-agency, Socratic dialogue, and professional hybrid intelligence.
+4.  `04_systemic_risks/`: Covers critical cognitive risks, over-reliance, and algorithmic dependencies.
+
+### Semantic Nodes & Handbooks
+There are **14 active semantic nodes** representing practices, capabilities, and risks. The files are distributed as follows:
+
+| Folder / Taxonomy Route | File Name | Node Type (`kind`) | Title / Concept | Key Epistemic Relations |
+|---|---|---|---|---|
+| `02_early_development` | `toddler_book.md` | `practice` | *The Embodied Portal* (Early Handbook) | Foundational Node |
+| `03_co_agency` | `adolescent_book.md` | `practice` | *The Dialectic Sparring Arena* (Adolescent Handbook) | Requires `[[independent_thinking]]`<br>Contradicts `[[ai_over_reliance]]` |
+| `03_co_agency` | `adult_book.md` | `practice` | *Epistemic Integration* (Adult Handbook) | Requires `[[collaborative_thinking]]`<br>Contradicts `[[ai_over_reliance]]` |
+| `03_co_agency` | `ai_augmentation_stance.md` | `practice` | *The Sovereign Augmentation Stance* | Contradicts `[[ai_over_reliance]]` |
+| `03_co_agency` | `ai_cognitive_partner.md` | `practice` | *AI as Cognitive Partner* | Strengthens `[[independent_thinking]]` |
+| `03_co_agency` | `collaborative_thinking.md` | `practice` | *Co-Agency & Collaborative Prototyping* | Contradicts `[[ai_over_reliance]]` |
+| `03_co_agency` | `creative_thinking.md` | `capability` | *The Generative Synthesis* | Contradicts `[[ai_over_reliance]]`<br>Requires `[[ai_augmentation_stance]]` |
+| `03_co_agency` | `critical_thinking.md` | `capability` | *Critical Thinking* | Threatens `[[unexamined_ai_answers]]` |
+| `03_co_agency` | `growing_learner_autonomy.md` | `capability` | *Growing Learner Autonomy* | Foundational Node |
+| `03_co_agency` | `independent_thinking.md` | `capability` | *The Epistemic Mirror* | Contradicts `[[ai_over_reliance]]` |
+| `03_co_agency` | `learning_cycle.md` | `practice` | *Learning Cycle* (Notice, Ask, Gen, Test, Reflect, Share) | Foundational Node |
+| `03_co_agency` | `reasoning_trails.md` | `practice` | *Reasoning Trails* | Threatens `[[unexamined_ai_answers]]` |
+| `04_systemic_risks` | `ai_over_reliance.md` | `risk` | *The Frictionless Trap: Algorithmic Comfort* | Threatens `[[independent_thinking]]`<br>Threatens `[[collaborative_thinking]]`<br>Mitigated by `[[toddler_book]]` |
+| `04_systemic_risks` | `unexamined_ai_answers.md` | `risk` | *Unexamined AI Answers* | Threatens `[[independent_thinking]]` |
+
+*(Note: `content/01_foundations/blueprint.md` has `draft: true` set and is compiled out of final production output via the `remove-draft` plugin).*
+
+### Frontmatter Schema Verification
+All 14 active semantic nodes implement a uniform YAML frontmatter schema:
+*   `id`: String matching the filename (e.g. `"toddler_book"`).
+*   `title`: Full descriptive title string.
+*   `kind`: Categorization (`"practice"`, `"capability"`, or `"risk"`).
+*   `ontogeny`: Floating-point developmental sequence index ($X$-axis, e.g. `1.2` to `8.8`).
+*   `praxis`: Floating-point cognitive effort index ($Y$-axis, e.g. `0.0` to `8.5`).
+*   `autonomy`: Floating-point agency self-sovereignty index ($Z$-axis, e.g. `0.5` to `9.5`).
+*   `tags`: Markdown categories array (`pyragogy` along with its sub-category, e.g. `pyragogy/practice`).
+
+### Obsidian Wikilinks & landing Page
+*   **Wikilinks Resolution:** Quartz parses wikilinks natively through the `obsidian-flavored-markdown` plugin. Link matching is configured with `markdownLinkResolution: shortest`, meaning Quartz dynamically maps short wikilink structures (e.g. `[[toddler_book]]`) directly to their nested targets without needing absolute paths.
+*   **Landing Page Structure:** `content/index.md` serves as the entry index. It links directly to the three core handbooks (toddler, adolescent, and adult books) in a "Core Bookshelf" section and features an Obsidian-native Dataview block.
+*   **Dataview Compatibility:** Because the dataview parsing engine is proprietary to the Obsidian application ecosystem and no Quartz translation plugin is registered in `quartz.config.yaml`, the Dataview code block will render as a raw markdown code block on the static generated site.
+
+---
+
+## 4. Verification and Dry-Run Build Results
+
+A clean verification run was executed using the Quartz compiler:
+*   **Source files detected:** 20 markdown inputs (1 index, 19 sub-notes/indexes).
+*   **Draft filtration:** `1 file` (`blueprint.md`) was successfully filtered out as expected.
+*   **Compile state:** Compilation succeeded cleanly, writing 106 static assets (including JSON graph indexes and HTML files) into the `public` deployment folder in 6 seconds.

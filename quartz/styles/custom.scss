@@ -1,0 +1,92 @@
+@use "./variables.scss" as *;
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.explorer {
+  .folder-container, .nav-file-title {
+    padding: 0.2rem 0;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    
+    &:hover {
+      color: var(--tertiary);
+      background-color: var(--highlight);
+      padding-left: 6px;
+    }
+  }
+
+  ul.tree-item-children {
+    border-left: 1px solid var(--lightgray);
+    margin-left: 0.5rem;
+    padding-left: 0.75rem;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-left-color: var(--secondary);
+    }
+  }
+}
+
+.graph-container {
+  svg {
+    circle {
+      transition: r 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), fill 0.3s ease;
+      cursor: pointer;
+      
+      &:hover {
+        r: 6px !important;
+        fill: var(--tertiary) !important;
+        stroke: var(--secondary) !important;
+        stroke-width: 2px;
+      }
+    }
+    
+    line {
+      transition: stroke 0.3s ease, stroke-width 0.3s ease;
+    }
+  }
+}
+#quartz-body > .sidebar {
+  margin-top: 0 !important;
+  padding-top: 2rem !important;
+  
+  & > * {
+    margin-top: 0 !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+.graph-outer {
+  height: 200px !important;
+  margin: 0 !important;
+}
+
+// Align the central column and main article wrapper with the adjusted sidebars
+#quartz-body > .center {
+  padding-top: 2rem !important; // Matches the exact padding of the sidebars
+  margin-top: 0 !important;
+
+  & > .page-header {
+    margin-top: 0 !important;
+  }
+
+  article {
+    margin-top: 0 !important;
+
+    & > h1:first-child {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}
