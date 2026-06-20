@@ -17,10 +17,23 @@ relations:
     type: threatens
 ---
 ---
-## Core Analysis
+## 1. Definition
+Critical Thinking is the cognitive capability to rigorously test claims, dissect underlying assumptions, evaluate primary evidence, and trace the logical implications of a given argument or dataset.
 
-The definition of critical thinking in the AI era emphasizes the capacity to actively interrogate information, evaluating underlying evidence and assumptions. Thinking critically means questioning one's own assumptions and assessing the quality of proof while maintaining cognitive flexibility and open-mindedness. Instead of rote learning, the focus shifts entirely to metacognitive awareness: asking oneself, "What alternative perspectives are being omitted here?" or "How do my personal biases shape this AI-assisted analysis?"
+## 2. Use Case
+Activated when analyzing complex texts, assessing AI-generated arguments, or preparing to integrate external information into a formal knowledge structure.
 
-In the age of generative AI, this capability becomes an existential requirement: critical thinking allows humans to audit AI outputs, challenge algorithmic recommendations, and make nuanced, contextual choices. Machines process data but lack human judgment; thus, it is our responsibility to integrate context, ethical frameworks, and human values into the final synthesis.
+## 3. Human Role
+The learner acts as a relentless forensic auditor ("Does this claim survive pressure?"). They must refuse to accept fluent prose at face value, demanding explicitly structured arguments and independently verifying the causal links between premise and conclusion.
 
-Within this pedagogical model, critical thinking acts as the primary epistemological engine. Learners confront AI-generated responses with their own independent reasoning, isolate hallucinations, and challenge unfounded assertions—transforming a mechanical output into genuine human understanding. This requires high cognitive friction; mastering critical thinking implies accepting creative frustration and rejecting passive information consumption. Techniques such as self-directed questions and explained choices guide students to make their logical steps explicit, training autonomy and cognitive responsibility.
+## 4. AI Role
+The AI is positioned as a logical adversary or an [[epistemic_mirror]]. It is tasked with exposing the flaws in the user's logic, or alternatively, it is intentionally instructed to present a flawed argument that the human must systematically dismantle.
+
+## 5. Friction
+The protocol prevents passive reading by implementing an [[evidence_demand]] or forcing the user to map the argument in a formal syllogism before the system allows the content to be summarized or stored.
+
+## 6. Risk
+If critical thinking is outsourced, the user falls victim to the [[fluency_heuristic]] and [[unexamined_ai_answers]], silently absorbing hallucinations, biases, and logically invalid conclusions simply because they are well-formatted.
+
+## 7. Observable Markers
+The user's dialogue history shows a high frequency of "Why?", "What is the source for this?", and "Identify the logical flaw in that statement" rather than "Summarize this for me."

@@ -18,41 +18,24 @@ relations:
     type: reinforces
 aliases: []
 ---
-## 1. Operational Definition
-Autonomy Failure Modes define the cognitive regressions that occur when a learner is granted high autonomy but lacks the metacognitive discipline or ontogenetic readiness to withstand comfort.
+## 1. Definition
+Autonomy Failure Modes are specific diagnostic patterns where a learner's apparent cognitive sovereignty is actually compromised, resulting in hidden dependency, simulated competence, or passive compliance during human-AI interactions.
 
-## 2. Theoretical Foundation
-Based on educational studies on the "illusion of competence," self-regulation breakdown under high cognitive load, and complacency dynamics.
+## 2. Use Case
+Activated as a continuous diagnostic overlay when evaluating a learner's long-term progression toward the Autonomy phase, particularly when the user appears to be successfully completing tasks but with minimal original input.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 7.0 (Sovereign level)
-- **Praxis Coordinate ($Y$):** 2.0 (Friction drop)
-- **Autonomy Coordinate ($Z$):** 8.0 (Unconstrained space)
+## 3. Human Role
+The learner must identify when their "independent" decisions are actually pre-calculated algorithmic suggestions and actively reclaim control over the architecture, pacing, and evaluation criteria of the task.
 
-## 4. Core Mechanics / Dynamics
-When structural friction is removed:
-1. **The Path of Least Resistance:** The learner reverts to simple copying and pasting.
-2. **Cognitive Drift:** The user ceases to verify facts, accepting plausible-sounding falsehoods.
-3. **Loss of Epistemic Agency:** Complete reliance on the machine to form opinions, write essays, and structure thoughts.
+## 4. AI Role
+The AI operates as a passive trap or enabler of these failures unless explicitly constrained. In a diagnostic capacity, it records the speed of user acceptance, the frequency of unaltered prompt executions, and the lack of structural resistance.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Metacognitive Regression Studies]
+## 5. Friction
+The diagnostic protocol applies friction by temporarily disabling the primary user interface and forcing the learner to explicitly map out their reasoning process, revealing whether the autonomy was genuine or simulated.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Detected when a learner fails exit gates on the Praxis to Autonomy bridge, or when editing speed drops in high-autonomy sessions.
+## 6. Risk
+If these failure modes go undetected, the learner graduates into high-stakes environments believing they are sovereign agents, while in reality, they are highly vulnerable to [[epistemic_dependency]] and algorithmic manipulation.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: [[cognitive_debt]]
-- Mechanism of defense: Re-introduces Socratic prompts and locks the editor screen if cognitive offloading rates rise above acceptable boundaries.
-
-## 8. Anti-Patterns
-- **Unregulated Liberty:** Assuming that giving a learner unmonitored access to high-power LLMs naturally results in independent thinking.
-
-## 9. Observable Markers
-- Immediate drop in typing variation and vocabulary complexity.
-- Silent acceptance of contradictory machine claims.
+## 7. Observable Markers
+System logs reveal that user-initiated prompts are merely cosmetic variations of the AI's previous outputs. Recovery is marked when the user begins introducing entirely novel constraints or refusing the AI's framing.adictory machine claims.
 - High rates of copy-paste actions during essay writing tasks.
