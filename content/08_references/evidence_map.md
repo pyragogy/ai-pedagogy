@@ -1,8 +1,7 @@
 ---
 id: evidence_map
 title: Project Evidence Map
-description: The core empirical validation matrix linking pyragogical principles
-  to cognitive science literature.
+description: A governance map for labeling the evidence status of claims inside the Pyragogy syllabus.
 type: reference
 phase: references
 status: operational
