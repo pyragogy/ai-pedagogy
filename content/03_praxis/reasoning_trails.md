@@ -16,23 +16,23 @@ relations:
   - target: "[[unexamined_ai_answers]]"
     type: threatens
 ---
-## 1. Definizione
-Il protocollo dei Reasoning Trails è la pratica di tracciare, preservare e valutare sistematicamente i passaggi intermedi del processo cognitivo ibrido (umano-AI), spostando la metrica di valutazione dal prodotto testuale finale alla mappa del ragionamento impiegato.
+## 1. Definition
+The Reasoning Trails protocol is the practice of systematically tracking, preserving, and evaluating the intermediate steps of the hybrid (human-AI) cognitive process, shifting the evaluation metric from the final textual product to the map of the reasoning employed.
 
-## 2. Uso
-Si attiva nella stesura di elaborati complessi, decisioni di design, o cicli di revisione tra pari, nei casi in cui l'autenticità e la solidità dell'indagine umana debbano essere validate in presenza di strumenti autogenerativi.
+## 2. Use Case
+Activated during the drafting of complex papers, design decisions, or peer review cycles, in cases where the authenticity and solidity of human inquiry must be validated in the presence of auto-generative tools.
 
-## 3. Ruolo Umano
-Preserva attivamente le bozze intermedie, argomenta esplicitamente le variazioni nei prompt, annota i dubbi metodologici e difende verbalmente o per iscritto le ragioni di accettazione o rigetto dell'output dell'agente.
+## 3. Human Role
+Actively preserves intermediate drafts, explicitly argues prompt variations, annotates methodological doubts, and defends—verbally or in writing—the reasons for accepting or rejecting the agent's output.
 
-## 4. Ruolo AI
-Produce l'output speculativo che viene sottoposto a scrutinio. Funziona da specchio espansivo, generando materiale su cui l'umano deve necessariamente operare tagli, selezioni e validazioni logiche.
+## 4. AI Role
+Produces the speculative output subjected to scrutiny. It acts as an expansive mirror, generating material upon which the human must necessarily operate cuts, selections, and logical validations.
 
-## 5. Frizione
-Rende impraticabile e immediatamente evidente l'automazione fluida "copia-e-incolla", imponendo il carico cognitivo dell'archiviazione critica e costringendo alla spiegazione dei nessi causali prima della sintesi.
+## 5. Friction
+Makes fluid "copy-and-paste" automation impractical and immediately evident, imposing the cognitive load of critical archiving and forcing the explanation of causal links before synthesis.
 
-## 6. Rischio
-Priva di Reasoning Trails, la valutazione fallisce: premia la produzione formale dell'agente nascondendo [[unexamined_ai_answers]] e oscurando la mancanza di comprensione profonda da parte dell'utente.
+## 6. Risk
+Without Reasoning Trails, evaluation fails: it rewards the formal production of the agent, hiding [[unexamined_ai_answers]] and obscuring the user's lack of deep understanding.
 
-## 7. Marker Osservabili
-Il documento finale è accompagnato da metadati strutturati o un file di log in cui il discente cita i prompt fallimentari e dimostra, riga per riga, dove e perché è intervenuto per correggere le scorciatoie proposte dalla macchina.
+## 7. Observable Markers
+The final document is accompanied by structured metadata or a log file in which the learner cites failed prompts and demonstrates, line by line, where and why they intervened to correct the machine's shortcuts.

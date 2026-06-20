@@ -18,23 +18,23 @@ relations:
     type: triggers
 aliases: []
 ---
-## 1. Definizione
-Il Pattern Perturbator è un agente cognitivo di base progettato per iniettare ostacoli costruttivi, conflitti logici e ipotesi alternative, impedendo al sistema umano-macchina di cristallizzarsi prematuramente su soluzioni banali.
+## 1. Definition
+The Pattern Perturbator is a baseline cognitive agent designed to inject constructive obstacles, logical conflicts, and alternative hypotheses, preventing the human-machine system from prematurely crystallizing on trivial solutions.
 
-## 2. Uso
-Si attiva come euristica operativa quando il sistema rileva una convergenza passiva: ad esempio, modifiche minime dell'utente ai testi dell'AI per più turni consecutivi, oppure dichiarazioni di chiusura su un tema senza aver vagliato alternative.
+## 2. Use Case
+Activated as an operational heuristic when the system detects passive convergence: for example, minimal user modifications to AI texts for multiple consecutive turns, or statements of closure on a topic without having explored alternatives.
 
-## 3. Ruolo Umano
-Messo di fronte all'ostacolo dell'agente, l'utente non può più appoggiarsi alla propria argomentazione lineare: deve elaborare difese articolate, cercare evidenze secondarie e giustificare rigorosamente le scelte contro-intuitive.
+## 3. Human Role
+Faced with the agent's obstacle, the user can no longer rely on their linear argumentation: they must elaborate articulate defenses, seek secondary evidence, and rigorously justify counter-intuitive choices.
 
-## 4. Ruolo AI
-Funge da interruttore di conformità. Genera forchette di ipotesi conflittuali (Hypothesis Forking), impone divieti temporanei su argomenti consueti (Constraint Injection) o forza l'utente a difendere la tesi dal punto di vista opposto (Perspective Shift). L'agente non convalida il problema né approva la tesi prima che l'utente abbia esplicitato le proprie assunzioni affrontando la contraddizione.
+## 4. AI Role
+Acts as a conformity switch. It generates conflicting hypothesis forks (Hypothesis Forking), imposes temporary bans on customary arguments (Constraint Injection), or forces the user to defend the thesis from the opposing viewpoint (Perspective Shift). The agent does not validate the problem nor does it approve the thesis before the user has made their assumptions explicit by confronting the contradiction.
 
-## 5. Frizione
-Disarticola la linearità del dialogo "domanda-risposta esatta", rendendo inagibile la strada algoritmica di minor resistenza e forzando l'utente in uno stato di temporaneo squilibrio cognitivo.
+## 5. Friction
+Disarticulates the linearity of the "question-exact answer" dialogue, making the algorithmic path of least resistance unusable and forcing the user into a state of temporary cognitive disequilibrium.
 
-## 6. Rischio
-La mancanza del Pattern Perturbator nei flussi stabili di co-design agevola l'insediamento letale del [[convergence_bias]]: il pensiero divergente si atrofizza, producendo ecosistemi intellettuali monocromi e scarsamente adattativi.
+## 6. Risk
+The absence of the Pattern Perturbator in stable co-design flows facilitates the lethal establishment of [[convergence_bias]]: divergent thinking atrophies, producing monochromatic and poorly adaptive intellectual ecosystems.
 
-## 7. Marker Osservabili
-I log dell'interazione registrano un momento di ricalibrazione: dopo il trigger perturbante, l'utente introduce lessico radicalmente nuovo, allarga la propria base di fonti e riformula l'ipotesi originaria integrando le obiezioni introdotte dall'agente.
+## 7. Observable Markers
+Interaction logs record a recalibration moment: after the perturbing trigger, the user introduces radically new vocabulary, broadens their source base, and reformulates the original hypothesis by integrating the objections introduced by the agent.

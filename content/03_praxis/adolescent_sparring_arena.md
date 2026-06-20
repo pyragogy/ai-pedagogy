@@ -19,23 +19,23 @@ relations:
   - target: "[[ai_over_reliance]]"
     type: contradicts
 ---
-## 1. Definizione
-La Dialectic Sparring Arena è un'infrastruttura formativa che sposta l'interazione da un modello di ricerca e indagine elementare a un rigoroso dibattito logico-critico, in cui l'AI assume un ruolo oppositivo.
+## 1. Definition
+The Dialectic Sparring Arena is a formative infrastructure that shifts interaction from a basic search and inquiry model to rigorous logical-critical debate, where the AI assumes an oppositional role.
 
-## 2. Uso
-Si attiva durante la fase di transizione in cui il discente inizia ad affrontare astrazioni complesse, dilemmi etici o progetti collaborativi, e necessita di testare la resistenza delle proprie argomentazioni.
+## 2. Use Case
+Activated during the transitional phase when the learner begins to tackle complex abstractions, ethical dilemmas, or collaborative projects, and needs to stress-test their arguments.
 
-## 3. Ruolo Umano
-Difende verbalmente e analiticamente le proprie decisioni progettuali o tesi concettuali contro le obiezioni sistematiche sollevate dal sistema, documentando i propri passi logici in un diario di bordo.
+## 3. Human Role
+Verbally and analytically defends their project decisions or conceptual theses against systematic objections raised by the system, documenting their logical steps in a logbook.
 
-## 4. Ruolo AI
-Opera come "Avvocato del Diavolo" socratico. È programmata con un "deficit pedagogico utile": non fornisce la risposta corretta, ma identifica le fallacie logiche, evidenzia le assunzioni non dichiarate e mette sotto stress le affermazioni del discente.
+## 4. AI Role
+Operates as a Socratic "Devil's Advocate." It is programmed with a "pedagogically useful deficit": it does not provide the correct answer, but identifies logical fallacies, highlights unstated assumptions, and stress-tests the learner's claims.
 
-## 5. Frizione
-Forza il discente a giustificare ogni salto inferenziale. Invece di ricevere conferme rassicuranti, l'utente incontra resistenza strutturale che rende impossibile chiudere il progetto senza aver prima difeso solidamente la tesi.
+## 5. Friction
+Forces the learner to justify every inferential leap. Instead of receiving reassuring confirmations, the user encounters structural resistance that makes it impossible to close the project without having solidly defended the thesis first.
 
-## 6. Rischio
-Senza l'abitudine al dibattito oppositivo, gli studenti sviluppano un severo [[automation_bias]]: si abituano a trattare gli output degli LLM come oracoli incontestabili, atrofizzando la capacità di produrre pensiero critico autonomo.
+## 6. Risk
+Without the habit of oppositional debate, students develop a severe [[automation_bias]]: they become accustomed to treating LLM outputs as unquestionable oracles, atrophying their ability to produce autonomous critical thought.
 
-## 7. Marker Osservabili
-Il discente documenta in modo tracciabile (tramite appunti o commit) esattamente come ha confutato le obiezioni sollevate dall'AI, o quali modifiche specifiche ha apportato al proprio progetto originale per renderlo inattaccabile.
+## 7. Observable Markers
+The learner documents in a traceable way (via notes or commits) exactly how they refuted the AI's objections, or what specific modifications they made to their original project to make it unassailable.

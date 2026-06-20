@@ -124,13 +124,13 @@ function audit() {
     // Check for the 7 required sections
     const markdownBody = content.substring(match[0].length);
     const requiredSections = [
-      "## 1. Definizione",
-      "## 2. Uso",
-      "## 3. Ruolo Umano",
-      "## 4. Ruolo AI",
-      "## 5. Frizione",
-      "## 6. Rischio",
-      "## 7. Marker Osservabili"
+      "## 1. Definition",
+      "## 2. Use Case",
+      "## 3. Human Role",
+      "## 4. AI Role",
+      "## 5. Friction",
+      "## 6. Risk",
+      "## 7. Observable Markers"
     ];
 
     const missingSections = requiredSections.filter(section => !markdownBody.includes(section));

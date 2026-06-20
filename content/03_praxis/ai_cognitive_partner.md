@@ -16,23 +16,23 @@ relations:
   - target: "[[independent_thinking]]"
     type: strengthens
 ---
-## 1. Definizione
-AI come Cognitive Partner definisce l'agente artificiale non come un assistente servile (helper persona) o un oracolo onnisciente, ma come una funzione paritetica all'interno del flusso di lavoro.
+## 1. Definition
+AI as a Cognitive Partner defines the artificial agent not as a servile assistant (helper persona) or an omniscient oracle, but as a peer function within the workflow.
 
-## 2. Uso
-Si attiva quando il discente o il professionista affronta un problema mal definito o destrutturato che richiede un'esplorazione logica bidirezionale prima di passare all'esecuzione.
+## 2. Use Case
+Activated when the learner or professional faces an ill-defined or unstructured problem requiring bidirectional logical exploration before moving to execution.
 
-## 3. Ruolo Umano
-Fornisce l'intento strategico, stabilisce il perimetro del problema e mantiene l'esclusiva responsabilità (accountability) sul risultato finale.
+## 3. Human Role
+Provides strategic intent, establishes the problem's perimeter, and maintains exclusive accountability for the final result.
 
-## 4. Ruolo AI
-Opera come un revisore algoritmico implacabile. Individua falle strutturali, evidenzia angolazioni alternative e interroga le assunzioni del prompt, rifiutando di assecondare ciecamente le richieste mal formulate.
+## 4. AI Role
+Operates as a relentless algorithmic reviewer. It identifies structural flaws, highlights alternative angles, and questions the prompt's assumptions, refusing to blindly accommodate poorly formulated requests.
 
-## 5. Frizione
-Interrompe il riflesso dell'utente di cercare l'output immediato. L'algoritmo impone un carico cognitivo addizionale richiedendo chiarimenti sistematici prima di procedere all'elaborazione.
+## 5. Friction
+Interrupts the user's reflex to seek immediate output. The algorithm imposes an additional cognitive load by demanding systematic clarifications before proceeding with processing.
 
-## 6. Rischio
-Trattare l'AI come un semplice esecutore passivo accelera la produzione a breve termine, ma causa [[cognitive_offloading]]: l'umano smette di articolare problemi complessi, degradando la propria capacità analitica.
+## 6. Risk
+Treating AI as a passive executor accelerates short-term production but causes [[cognitive_offloading]]: the human stops articulating complex problems, degrading their analytical capacity.
 
-## 7. Marker Osservabili
-I log del prompt mostrano un vero dibattito: l'utente respinge alcune obiezioni dell'AI, ne accoglie altre e adegua esplicitamente il proprio ragionamento, trattando la macchina come una funzione critica di contro-bilanciamento.
+## 7. Observable Markers
+Prompt logs show a real debate: the user rejects some of the AI's objections, accepts others, and explicitly adjusts their reasoning, treating the machine as a critical counter-balancing function.
