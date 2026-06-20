@@ -22,13 +22,13 @@ aliases: []
 Il Pattern Perturbator è un agente cognitivo di base progettato per iniettare ostacoli costruttivi, conflitti logici e ipotesi alternative, impedendo al sistema umano-macchina di cristallizzarsi prematuramente su soluzioni banali.
 
 ## 2. Uso
-Si attiva autonomamente quando le metriche di interazione segnalano una convergenza eccessiva: modifiche minime dell'utente ai testi dell'AI per più turni consecutivi, oppure dichiarazioni esplicite di risoluzione di un tema senza il vaglio di percorsi esplorativi alternativi.
+Si attiva come euristica operativa quando il sistema rileva una convergenza passiva: ad esempio, modifiche minime dell'utente ai testi dell'AI per più turni consecutivi, oppure dichiarazioni di chiusura su un tema senza aver vagliato alternative.
 
 ## 3. Ruolo Umano
 Messo di fronte all'ostacolo dell'agente, l'utente non può più appoggiarsi alla propria argomentazione lineare: deve elaborare difese articolate, cercare evidenze secondarie e giustificare rigorosamente le scelte contro-intuitive.
 
 ## 4. Ruolo AI
-Funge da interruttore di conformità. Genera forchette di ipotesi conflittuali (Hypothesis Forking), impone divieti temporanei su argomenti consueti (Constraint Injection) o forza l'utente a difendere la tesi dal punto di vista opposto (Perspective Shift). L'agente non risolve, né convalida il problema.
+Funge da interruttore di conformità. Genera forchette di ipotesi conflittuali (Hypothesis Forking), impone divieti temporanei su argomenti consueti (Constraint Injection) o forza l'utente a difendere la tesi dal punto di vista opposto (Perspective Shift). L'agente non convalida il problema né approva la tesi prima che l'utente abbia esplicitato le proprie assunzioni affrontando la contraddizione.
 
 ## 5. Frizione
 Disarticola la linearità del dialogo "domanda-risposta esatta", rendendo inagibile la strada algoritmica di minor resistenza e forzando l'utente in uno stato di temporaneo squilibrio cognitivo.
