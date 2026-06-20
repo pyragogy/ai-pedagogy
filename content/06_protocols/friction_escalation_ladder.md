@@ -32,7 +32,7 @@ The AI acts as an adaptive environmental controller, escalating resistance seque
 * Step 1: The AI responds with a soft clarification (e.g., "Could you specify what part of the logic you want me to expand?").
 * Step 2: The AI introduces a direct contradiction to the user's premise.
 * Step 3: The AI forces a structured trade-off decision before continuing.
-* Step 4: The AI enacts a hard refusal of premature completion, locking code generation and demanding a manual summary.
+* Step 4: The AI enacts a hard refusal of premature completion and imposes a forced manual synthesis checkpoint, demanding the user summarize their progress without assistance before proceeding.
 
 ## 5. Friction
 The mechanism dynamically interrupts the path of least resistance, forcing the user to exert more raw cognitive effort to extract value from the machine the more they try to offshore their thinking.

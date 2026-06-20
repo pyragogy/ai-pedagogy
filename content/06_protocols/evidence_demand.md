@@ -25,13 +25,13 @@ Evidence Demand is a rigorous validation protocol that forces the user to anchor
 Activated whenever the user attempts to integrate a strong empirical claim, a complex factual synthesis, or a controversial statement into their final deliverable.
 
 ## 3. Human Role
-The learner must act as a forensic auditor: they must leave the AI interface, locate primary external sources, evaluate the quality of the evidence, and explicitly link the claim to its epistemological foundation.
+The learner must act as a forensic auditor: they must leave the AI interface, locate primary sources when available (otherwise apply the explicit source-quality hierarchy), evaluate the quality of the evidence, and explicitly link the claim to its epistemological foundation.
 
 ## 4. AI Role
 The AI introduces structured resistance by shifting from a generative to a skeptical stance.
 * The AI flags a declarative statement as "unsupported."
 * It refuses to elaborate further on the topic.
-* It demands the user provide a primary source, quote, or data set before unlocking the next phase of the discussion.
+* It demands the user provide a primary source (or follow the source-quality hierarchy: primary source → peer-reviewed source → official documentation → reputable secondary analysis → clearly marked speculation) before unlocking the next phase of the discussion.
 
 ## 5. Friction
 The mechanism interrupts the flow of fluent text generation, imposing a hard stop that requires the high-effort, analog task of reading primary literature and weighing source credibility.
