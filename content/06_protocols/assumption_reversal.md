@@ -16,39 +16,26 @@ relations:
     type: mitigates
 aliases: []
 ---
-## 1. Operational Definition
-Assumption Reversal is a structured thinking exercise that forces the user to write down all assumptions underlying a project or thesis, reverse them, and design a working solution under the reversed rules.
+## 1. Definition
+Assumption Reversal is a cognitive intervention protocol designed to expose and invert the hidden structural premises of a user's prompt, creating a new, rigorous design space rather than engaging in random contrarianism.
 
-## 2. Theoretical Foundation
-Derived from lateral thinking methodology (Edward de Bono) and cognitive flexibility theory.
+## 2. Use Case
+Activated when the system detects a user trapped in linear thinking, or when a prompt contains deeply embedded, unexamined axioms that artificially narrow the solution space.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 6.0
-- **Praxis Coordinate ($Y$):** 5.0 (Conceptual manipulation friction)
-- **Autonomy Coordinate ($Z$):** 4.0
+## 3. Human Role
+The learner must confront the fragility of their axioms, actively map out the consequences of the reversed logic, and attempt to construct a viable argument or solution under the newly imposed constraints.
 
-## 4. Core Mechanics / Dynamics
-1. **Identification:** The user lists 5 axioms or assumptions they are taking for granted.
-2. **Reversal:** The user writes the exact negation of each assumption.
-3. **Synthesis:** The user must describe how to achieve their goal under these reversed parameters, creating a new design space.
+## 4. AI Role
+The AI acts as an epistemic stress-tester by systematically inverting the foundation of the query.
+* The AI first asks the learner to explicitly state their core assumption.
+* Then it formally reverses that assumption.
+* Finally, it asks the learner what would still remain true if the reversed assumption were the actual reality.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** Medium
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [Cognitive flexibility testing logs]
+## 5. Friction
+The protocol interrupts the user's forward momentum by forcing them to stop executing their current plan and instead rebuild their logic from first principles under a hostile paradigm.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Initiated when a student is stuck in a linear design path or exhibits performative understanding.
+## 6. Risk
+This protocol prevents [[performative_understanding]] and [[unexamined_ai_answers]], breaking the illusion of competence by forcing the user to demonstrate structural comprehension rather than just repeating facts.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: [[performative_understanding]]
-- Mechanism of defense: Breaks passive agreement by forcing the user to rebuild their logic from first principles under a completely different paradigm.
-
-## 8. Anti-Patterns
-- **Trivial Reversal:** Reversing cosmetic elements instead of core axioms (e.g., reversing UI colors instead of database access structures).
-
-## 9. Observable Markers
-- A list of original and reversed axioms documented in the project logs.
-- Design specifications that successfully compile under reversed rules.
+## 7. Observable Markers
+Project logs document a clear "before and after" shift in the problem framing. The user successfully formulates a new hypothesis that survives the reversed constraints.

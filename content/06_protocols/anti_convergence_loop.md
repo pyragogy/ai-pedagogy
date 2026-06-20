@@ -18,41 +18,26 @@ relations:
     type: requires
 aliases: []
 ---
-## 1. Operational Definition
-The Anti-Convergence Loop is a multi-step dialogue protocol that forces the user to actively generate, compare, and rank alternative hypotheses before arriving at a final conclusion.
+## 1. Definition
+The Anti-Convergence Loop is an operational protocol that forces the human-AI system to delay final synthesis by actively generating and evaluating competing, divergent alternatives before reaching closure.
 
-## 2. Theoretical Foundation
-Based on multi-attribute utility theory and structured analytic techniques (Analysis of Competing Hypotheses - ACH) used in complex intelligence analysis.
+## 2. Use Case
+Activated during the early ideation or problem-structuring phases when the AI generates a highly plausible first answer and the user attempts to immediately accept it as the final solution.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** 5.0
-- **Praxis Coordinate ($Y$):** 5.5 (Structured analytical friction)
-- **Autonomy Coordinate ($Z$):** 3.5
+## 3. Human Role
+The learner must tolerate the ambiguity of holding multiple conflicting ideas simultaneously, actively evaluate the tradeoffs of each alternative, and explicitly defend why one path is chosen over the others.
 
-## 4. Core Mechanics / Dynamics
-The loop executes in 4 stages:
-1. **Diverge:** The user must list at least 3 distinct, competing explanations for a given phenomenon.
-2. **De-bias:** The AI (acting as `pattern_perturbator`) identifies hidden assumptions in each explanation.
-3. **Compare:** The user compiles an inconsistency matrix showing how evidence fits each hypothesis.
-4. **Reflect:** The user drafts a final, complex defense of their chosen hypothesis, detailing why the others were rejected.
+## 4. AI Role
+The AI operates as a divergence engine, introducing structured resistance to early closure.
+* The AI detects an attempt to finalize a concept prematurely.
+* It temporarily locks the synthesis and generates two radically different alternatives to the proposed solution.
+* It demands the user explicitly analyze the weaknesses of the new alternatives before allowing closure.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [ACH protocol class trials]
+## 5. Friction
+The mechanism interrupts the human instinct for rapid cognitive closure by making the first, easiest answer mechanically impossible to accept without passing through a mandatory comparison phase.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Activated during hypothesis testing stages of the [[learning_cycle]].
+## 6. Risk
+This protocol specifically mitigates [[convergence_bias]], preventing the user from collapsing their intellectual exploration into the most statistically average machine output.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: [[convergence_bias]]
-- Mechanism of defense: Prevents premature closure on the first plausible explanation by forcing the consideration of competing alternatives.
-
-## 8. Anti-Patterns
-- **The Empty Choice:** Generating trivial alternate hypotheses just to satisfy the 3-item threshold without exploring genuine alternatives.
-
-## 9. Observable Markers
-- Completed inconsistency matrices stored in user workspaces.
-- Decreased similarity between initial user ideas and final submitted work.
+## 7. Observable Markers
+Interaction logs show the user exploring at least three distinct conceptual branches. The final submitted work contains explicit justifications detailing why alternate hypotheses were discarded.
