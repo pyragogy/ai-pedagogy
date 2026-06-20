@@ -14,40 +14,23 @@ tags:
 relations: []
 aliases: []
 ---
-## 1. Operational Definition
-The Evidence Map serves as the central directory linking the various risks, capabilities, and protocols of the Pyragogy vault to peer-reviewed academic literature.
+## 1. Definition
+The Evidence Map governs the evidential discipline of the entire syllabus, explicitly categorizing the empirical status of claims using labels like `supported claim`, `theoretical synthesis`, `design hypothesis`, `speculative extension`, and `needs empirical validation`.
 
-## 2. Theoretical Foundation
-Built on evidence-based medicine and education review models, where claims must be categorized by their level of empirical support.
+## 2. Use Case
+Activated whenever a node makes definitive claims about human learning, cognitive science, AI behavior, developmental psychology, or pedagogical efficacy.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** N/A
-- **Praxis Coordinate ($Y$):** 0.0
-- **Autonomy Coordinate ($Z$):** 0.0
+## 3. Human Role
+The human must actively distinguish between well-supported empirical claims, their own theoretical syntheses, design hypotheses intended for testing, and speculative extensions. They are responsible for maintaining the academic integrity of the map.
 
-## 4. Core Mechanics / Dynamics
-The map lists active scientific trials and connects them directly to keys in `content/08_references/bibliography.bib`.
-1. **Desirable Difficulties:** Supported by Bjork (1994) -> linked to [[cognitive_offloading]] mitigations.
-2. **Automation Bias:** Supported by Parasuraman (1997) -> linked to [[automation_bias]] risks.
-3. **Cognitive Offloading:** Supported by Storm (2016) -> linked to [[cognitive_debt]] risks.
+## 4. AI Role
+The AI must act as a strict auditor. It is required to flag unsupported claims, ask for the placement of claims within the evidence hierarchy, and strictly avoid inventing citations, studies, or authors (hallucinations).
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High (Meta-review node)
-> - **Primary Reference:** Self-referential index
-> - **Active Trials:** [Project validation suite]
+## 5. Friction
+The protocol prevents persuasive theory from pretending to be established empirical fact. Any new claim introduced into the system must be halted and tagged with its correct evidence status before it can be fully integrated into the public syllabus.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Active whenever auditing nodes for academic rigor.
+## 6. Risk
+Without rigorous evidence mapping, Pyragogy risks becoming rhetorically strong but academically fragile. If design hypotheses are mistaken for supported claims, the entire framework loses its empirical grounding and credibility.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: [[performative_understanding]]
-- Mechanism of defense: Prevents claims from being accepted on faith, anchoring every concept in empirical research.
-
-## 8. Anti-Patterns
-- **Citation Inflation:** Listing papers that are tangentially related without verifying that they support the exact claims made in the node.
-
-## 9. Observable Markers
-- Comprehensive indexing of all bibliography keys.
-- Complete citations compiled on the generated site bibliography page.
+## 7. Observable Markers
+Every major claim in the syllabus is explicitly labeled by its evidence status. Speculative extensions are clearly marked as such, and no fake citation authority or inflated maturity is introduced into the framework.

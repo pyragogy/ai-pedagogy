@@ -16,42 +16,23 @@ relations:
     type: reinforces
 aliases: []
 ---
-## 1. Operational Definition
-The Cartesian Axes define a three-dimensional coordinate system ($X, Y, Z$) to classify and track any pedagogical entity or state in the human-machine learning loop.
+## 1. Definition
+The Cartesian Axes define the three-dimensional pedagogical space of Pyragogy: Ontogeny (developmental readiness), Praxis (cognitive friction and effort), and Autonomy (epistemic sovereignty). They are structured interpretive coordinates, not objective mathematical measurements.
 
-## 2. Theoretical Foundation
-Draws from developmental stage theories (Piaget/Vygotsky) combined with active learning metrics (cognitive load, desirable difficulties) and agency dynamics.
+## 2. Use Case
+Activated whenever a node (a risk, capability, or protocol) needs to be positioned within the system, compared against other nodes, or audited for its pedagogical appropriateness at a given stage of a learner's development.
 
-## 3. Cartesian Axis Mapping
-- **Ontogeny Coordinate ($X$):** Measures developmental evolution (0.0 = sensory-motor, 10.0 = complete cognitive synthesis).
-- **Praxis Coordinate ($Y$):** Measures the intensity of cognitive friction and effort (0.0 = effortless ingestion, 10.0 = maximum dialectic sparring).
-- **Autonomy Coordinate ($Z$):** Measures decision-making sovereignty (0.0 = total machine guidance, 10.0 = total human self-determination).
+## 3. Human Role
+The human must interpret axis placement as a qualitative pedagogical judgment. The user decides whether a specific intervention is appropriate based on where the learner currently sits in the three-dimensional space, rather than treating the coordinates as a decorative score.
 
-## 4. Core Mechanics / Dynamics
-Coordinates are computed dynamically based on the active learning node configurations. The system tracks movements along:
-1. **The Developmental Axis ($X$):** Moves from simple mental structures to abstract symbolic thinking.
-2. **The Effort Axis ($Y$):** Escalates from passive reading to Socratic questioning and assumption reversal.
-3. **The Sovereignty Axis ($Z$):** Transitions from machine-scaffolded steps to completely independent user investigations.
+## 4. AI Role
+The AI can suggest coordinate placement for new concepts based on structural similarity to existing nodes, but it must explicitly justify its suggestions using the node's actual function and the definitions of the axes.
 
-## 5. Scientific Evidence Status
-> [!NOTE]
-> ### Evidence Assessment
-> - **Empirical Support Level:** High
-> - **Primary Reference:** [[evidence_map]]
-> - **Active Trials:** [General System Metrics]
+## 5. Friction
+The governance mechanism prevents arbitrary scoring by forcing explicit reasoning for each coordinate. A node cannot simply be assigned "10/10 Autonomy"; the system demands a rationale for *why* the node requires that level of sovereignty.
 
-## 6. Transition Gates / Activation Criteria
-- **Activation Triggers:** Triggered when evaluating a node's suitability for a learner's development profile.
-- **Entry Gates:** Requires initial baseline cognitive assessment.
-- **Exit Gates:** Systemic graduation to multi-agent co-design workflows.
+## 6. Risk
+Without these axes, the graph becomes a beautiful but semantically flat constellation. Nodes would exist in a vacuum, making it impossible to determine if a specific protocol is an early-stage necessity or an advanced capability, leading to pedagogical misapplication.
 
-## 7. Cognitive Risk Mitigations
-- Mitigates: [[automation_bias]]
-- Mechanism of defense: Prevents placing learners in high-autonomy environments before they have established sufficient foundational ontogeny.
-
-## 8. Anti-Patterns
-- **Static Labeling:** Treating coordinates as fixed grades rather than fluid, context-dependent indices of active engagement.
-
-## 9. Observable Markers
-- Accurate plotting of user session metrics on the 3D grid.
-- Dynamic shifts in sidebar syllabus suggestions based on current axis values.
+## 7. Observable Markers
+Nodes can be compared meaningfully. The axis values clearly explain why one node belongs in early ontogeny, why another requires high friction (praxis), and why a third demands complete autonomy.
