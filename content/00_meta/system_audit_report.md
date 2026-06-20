@@ -1,7 +1,7 @@
 # System Audit Report: AI-Pedagogy Digital Garden
 
 **Date:** June 20, 2026  
-**Project Path:** `/home/blubar/Scrivania/ai-pedagogy`  
+**Project Path:** `.`  
 **SSG Framework:** Quartz v5.0.0 (Quartz 4 TSX/Preact-based architecture)  
 
 ---
@@ -14,10 +14,10 @@ The `ai-pedagogy` project is structured as a **local Obsidian Vault** that serve
 Conceptually, the vault details **Pyragogy**—an evolutionary handbook mapping pedagogical frameworks, practices, and capabilities designed to preserve human intellectual sovereignty, intentional agency, and effortful reasoning (cognitive friction) in an age of automated AI scaffolding.
 
 ### Exact Directory Layout Verification
-The root directory `/home/blubar/Scrivania/ai-pedagogy` contains the following critical system and structure files:
-*   [quartz.config.yaml](file:///home/blubar/Scrivania/ai-pedagogy/quartz.config.yaml): Defines configuration options, plugin parameters, color theme, typography, and page layout structure.
-*   [package.json](file:///home/blubar/Scrivania/ai-pedagogy/package.json): Handles dependencies (Preact, chokidar, lightningcss, workerpool, etc.) and execution scripts (`quartz` bootstrap, build, test). Engines require `node >=22` and `npm >=10.9.2`.
-*   [quartz/styles/custom.scss](file:///home/blubar/Scrivania/ai-pedagogy/quartz/styles/custom.scss): Declares custom Sass style overrides targeting layout alignment, graph sizing, transitions, and hover interactions.
+The root directory `.` contains the following critical system and structure files:
+*   [quartz.config.yaml](../../quartz.config.yaml): Defines configuration options, plugin parameters, color theme, typography, and page layout structure.
+*   [package.json](../../package.json): Handles dependencies (Preact, chokidar, lightningcss, workerpool, etc.) and execution scripts (`quartz` bootstrap, build, test). Engines require `node >=22` and `npm >=10.9.2`.
+*   [quartz/styles/custom.scss](../../quartz/styles/custom.scss): Declares custom Sass style overrides targeting layout alignment, graph sizing, transitions, and hover interactions.
 *   `.obsidian/`: Contains configuration files (`app.json`, `core-plugins.json`, `graph.json`, etc.) that configure the folder as a native Obsidian Vault.
 *   `content/`: Root folder for all markdown documentation, divided into evolutionary taxonomy paths.
 
