@@ -8,7 +8,7 @@ This ecosystem is an **active cognitive extension** and an **operational framewo
 The site is not a static archive, but an interactive map designed to hack traditional learning processes through the intentional use of machines as academic peers.
 
 ### ⚡ What is this ecosystem for?
-* **Preserving Cognitive Sovereignty**: Refuse passive AI automation. Here, the algorithm does not perform tasks on behalf of humans, but acts as a critical mirror and a driver of **Cognitive Friction** (Cognitive Friction).
+* **Preserving Cognitive Sovereignty**: Refuse passive AI automation. Here, the algorithm does not perform tasks on behalf of humans, but acts as a critical mirror and a driver of **Cognitive Friction**.
 * **Mapping the Evolution of Co-Agency**: Track the development of hybrid intelligence across three fundamental Cartesian coordinates: **Ontogeny** (evolutionary stage), **Praxis** (action/friction level), and **Autonomy** (user decision-making sovereignty).
 * **Exploring Epistemic Relations**: Use the dynamic Graph View to visualize in real time how concepts reinforce, contradict, or isolate each other within the network of knowledge.
 
