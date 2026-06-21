@@ -39,10 +39,10 @@ The color theme is defined in `quartz.config.yaml` under `theme.colors`. Notably
 | `#52525b`                 | `gray`          | Meta-text, reading time, dates, and subtitle lines                 |
 | `#d4d4d8`                 | `darkgray`      | Main body/paragraph text (High-contrast light gray)                |
 | `#ffffff`                 | `dark`          | Primary page headers (`h1`, `h2`), page titles, and strong text    |
-| `#ff9e00`                 | `secondary`     | Links, folder tree nodes, active files (Vibrant Amber/Orange)      |
-| `#ffb703`                 | `tertiary`      | Backlink items, hover states, tag links, graph nodes (Gold/Yellow) |
-| `rgba(255, 158, 0, 0.06)` | `highlight`     | Block quotes and code block backgrounds                            |
-| `#b3aa0288`               | `textHighlight` | Highlighted search results (Olive-Yellow)                          |
+| `#10b981` / `#34d399`     | `secondary`     | Links, folder tree nodes, active files (Elegant Emerald Green)     |
+| `#059669` / `#10b981`     | `tertiary`      | Backlink items, hover states, tag links, graph nodes (Medium Green) |
+| `rgba(16, 185, 129, 0.14)` / `rgba(52, 211, 153, 0.14)` | `highlight` | Block quotes and code block backgrounds |
+| `rgba(16, 185, 129, 0.22)` / `rgba(52, 211, 153, 0.22)` | `textHighlight` | Highlighted search results & text highlights |
 
 ### Typography
 
@@ -65,9 +65,9 @@ The site layout balances information across a three-column desktop presentation:
 - **Sidebar Alignment:** Overrides on `body .page > .sidebar` force a reset of `margin-top: 0 !important` and add a `padding-top: 1rem !important`. Children components are restricted to `margin-bottom: 1.5rem` to prevent vertical alignment mismatch and height jitter during load.
 - **Graph Bounds:** The class `.graph-outer` is strictly bounded to `height: 200px !important; margin: 0 !important;` to stabilize the sidebar space and prevent Cumulative Layout Shift (CLS) when the SVG elements compile.
 - **Micro-Animations:**
-  - Syllabus explorer directories and files shift padding (`padding-left: 6px`) and shift text color to `var(--tertiary)` (Gold) over a `0.2s` transition on hover.
-  - Folder child bullets (`ul.tree-item-children`) transition their left-border color to `var(--secondary)` (Amber) on hover.
-  - Graph nodes (`svg circle`) expand their radius `r: 6px` on hover and change their colors to gold fill and amber stroke over a cubic-bezier transition.
+  - Syllabus explorer directories and files shift padding (`padding-left: 6px`) and shift text color to `var(--tertiary)` (Green) over a `0.2s` transition on hover.
+  - Folder child bullets (`ul.tree-item-children`) transition their left-border color to `var(--secondary)` (Emerald) on hover.
+  - Graph nodes (`svg circle`) expand their radius `r: 6px` on hover and change their colors to green fill and emerald stroke over a cubic-bezier transition.
 
 ---
 

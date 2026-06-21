@@ -96,3 +96,89 @@ h2 {
     }
   }
 }
+
+:root,
+[saved-theme="light"],
+[saved-theme="dark"] {
+  --secondary: #10b981 !important;
+  --tertiary: #059669 !important;
+  --highlight: rgba(16, 185, 129, 0.14) !important;
+  --textHighlight: rgba(16, 185, 129, 0.22) !important;
+
+  --graph-node: #10b981 !important;
+  --graph-node-attachment: #059669 !important;
+  --graph-node-tag: rgba(16, 185, 129, 0.4) !important;
+  --graph-node-unresolved: #a1a1aa !important;
+  --graph-node-focused: #10b981 !important;
+  --graph-line: rgba(16, 185, 129, 0.15) !important;
+}
+
+[saved-theme="dark"] {
+  --secondary: #34d399 !important;
+  --tertiary: #10b981 !important;
+  --highlight: rgba(52, 211, 153, 0.14) !important;
+  --textHighlight: rgba(52, 211, 153, 0.22) !important;
+
+  --graph-node: #34d399 !important;
+  --graph-node-attachment: #10b981 !important;
+  --graph-node-tag: rgba(52, 211, 153, 0.4) !important;
+  --graph-node-unresolved: #71717a !important;
+  --graph-node-focused: #34d399 !important;
+  --graph-line: rgba(52, 211, 153, 0.15) !important;
+}
+
+a,
+a.internal,
+a.external,
+.breadcrumb-element,
+.folder-title,
+li.section-li > .section > .meta,
+.graph > h3,
+.search > .search-button,
+button,
+button svg,
+svg {
+  accent-color: #10b981;
+}
+
+mark,
+.text-highlight,
+span.text-highlight {
+  background-color: rgba(16, 185, 129, 0.22) !important;
+}
+
+// Callouts Override
+.callout[data-callout="warning"],
+.callout[data-callout="attention"],
+.callout[data-callout="important"],
+.callout[data-callout="question"] {
+  --color: #10b981 !important;
+  --border: rgba(16, 185, 129, 0.26) !important;
+  --bg: rgba(16, 185, 129, 0.08) !important;
+}
+
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="attention"] .callout-title,
+.callout[data-callout="important"] .callout-title,
+.callout[data-callout="question"] .callout-title {
+  color: #10b981 !important;
+}
+
+[saved-theme="dark"] {
+  .callout[data-callout="warning"],
+  .callout[data-callout="attention"],
+  .callout[data-callout="important"],
+  .callout[data-callout="question"] {
+    --color: #34d399 !important;
+    --border: rgba(52, 211, 153, 0.26) !important;
+    --bg: rgba(52, 211, 153, 0.08) !important;
+  }
+  
+  .callout[data-callout="warning"] .callout-title,
+  .callout[data-callout="attention"] .callout-title,
+  .callout[data-callout="important"] .callout-title,
+  .callout[data-callout="question"] .callout-title {
+    color: #34d399 !important;
+  }
+}
+
