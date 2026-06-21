@@ -12,7 +12,7 @@ praxis_index: 6.5
 autonomy_index: 4.5
 phase: praxis
 status: operational
-description: ""
+description: "A formative infrastructure shifting AI interaction from basic search to Socratic, logical-critical debate with the machine as an adversary."
 relations:
   - target: "[[independent_thinking]]"
     type: requires

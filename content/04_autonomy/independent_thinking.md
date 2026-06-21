@@ -31,11 +31,11 @@ The learner must tolerate the discomfort of the blank page and the uncertainty o
 
 ## 4. AI Role
 
-The AI's role is strictly delayed. The system is configured to refuse interaction or validation until the user has submitted a sufficiently detailed "pre-computation" or independent draft.
+The AI's role is strictly delayed. In an implemented learning environment, the AI interaction should be delayed until the learner has produced a sufficiently detailed independent draft.
 
 ## 5. Friction
 
-The mechanism relies on a "First-Draft Lockout." The generative interface is inaccessible until the user meets a minimum threshold of independent effort, preventing the immediate offloading of the initial cognitive struggle.
+The mechanism relies on a "First-Draft Lockout." The protocol design specifies that the generative interface should remain inaccessible until the user meets a minimum threshold of independent effort, preventing the immediate offloading of the initial cognitive struggle.
 
 ## 6. Risk
 

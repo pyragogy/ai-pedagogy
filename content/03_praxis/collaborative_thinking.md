@@ -11,7 +11,7 @@ praxis_index: 6.5
 autonomy_index: 8.5
 phase: praxis
 status: operational
-description: ""
+description: "A co-creation protocol where the AI operates as a cross-functional analyst and strategic partner, engaging in joint action rather than silent automation."
 relations:
   - target: "[[ai_over_reliance]]"
     type: contradicts

@@ -1,3 +1,8 @@
+---
+title: "Pyragogy Syllabus"
+description: "A living operational framework for human-AI learning, cognitive friction, and peer-like co-creation."
+---
+
 # AI-Augmented Human Thinking Pedagogy
 
 This syllabus is a living map for learning with AI without becoming passive in front of it.

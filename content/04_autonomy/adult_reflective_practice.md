@@ -12,7 +12,7 @@ praxis_index: 8
 autonomy_index: 7.5
 phase: autonomy
 status: operational
-description: ""
+description: "The structural integration of cognitive friction into real-world professional environments to prevent automatic acceptance of AI outputs."
 relations:
   - target: "[[collaborative_thinking]]"
     type: requires

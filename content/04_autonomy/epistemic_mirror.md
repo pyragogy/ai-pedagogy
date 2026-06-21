@@ -11,7 +11,7 @@ praxis_index: 7
 autonomy_index: 8.5
 phase: autonomy
 status: operational
-description: ""
+description: "An operational protocol where the machine reflects the raw logical structure and implicit assumptions of the user's reasoning back to them."
 relations:
   - target: "[[unexamined_ai_answers]]"
     type: mitigates

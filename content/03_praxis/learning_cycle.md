@@ -11,7 +11,7 @@ praxis_index: 5.5
 autonomy_index: 1.5
 phase: praxis
 status: operational
-description: ""
+description: "An iterative 6-phase framework (Notice, Ask, Generate, Test, Reflect, Share) designed to convert passive AI consumption into active discovery."
 relations: []
 ---
 

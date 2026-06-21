@@ -12,7 +12,7 @@ praxis_index: 5
 autonomy_index: 9
 phase: praxis
 status: operational
-description: ""
+description: "The conditional posture defining how AI expands human capacity only when human epistemic agency and accountability remain intact."
 relations:
   - target: "[[ai_over_reliance]]"
     type: contradicts

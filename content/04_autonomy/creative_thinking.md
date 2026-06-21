@@ -12,7 +12,7 @@ praxis_index: 7
 autonomy_index: 8
 phase: autonomy
 status: operational
-description: ""
+description: "The cognitive capability to produce non-obvious combinations and alternative framings, avoiding the statistical clichés of default algorithmic outputs."
 relations:
   - target: "[[ai_over_reliance]]"
     type: contradicts

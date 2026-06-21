@@ -12,7 +12,7 @@ praxis_index: 4
 autonomy_index: 1.5
 phase: ontogeny
 status: operational
-description: ""
+description: "A developmental foundation for preserving embodied attention, sensory-motor inquiry, and resistance to premature screen-mediated automation."
 relations: []
 ---
 
@@ -38,7 +38,7 @@ The mechanism relies on natural, physical friction—the inherent resistance of 
 
 ## 6. Risk
 
-If the learner bypasses this foundation and is exposed prematurely to frictionless generative interfaces, they risk severe deficits in executive function, spatial prediction, and the ability to tolerate analog frustration.
+If the learner bypasses this foundation and is exposed prematurely to frictionless generative interfaces, the framework treats this as a risk condition: attention, spatial reasoning, frustration tolerance, and embodied problem-solving may become under-practiced rather than actively strengthened.
 
 ## 7. Observable Markers
 
