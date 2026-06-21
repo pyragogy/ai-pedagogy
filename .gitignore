@@ -3,13 +3,20 @@ node_modules/
 .quartz-cache/
 .quartz/
 public/
+*.tsbuildinfo
+
+# Environment and wrangler files
+.env
+.env.*
+.wrangler/
+
+# Temporary and backup files
+*.log
+*.tmp
+*.bak
 
 # Obsidian system files
-.obsidian/workspace.json
-.obsidian/graph.json
-.obsidian/caches/
-.obsidian/plugins/
-.obsidian/themes/
+.obsidian/
 
 # OS junk
 .DS_Store
