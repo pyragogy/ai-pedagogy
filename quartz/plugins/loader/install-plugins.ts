@@ -29,6 +29,30 @@ async function main() {
 
   if (externalPlugins.length === 0) {
     console.log("No external plugins to install.")
+    const PLUGINS_CACHE_DIR = path.join(process.cwd(), ".quartz", "plugins")
+    const indexPath = path.join(PLUGINS_CACHE_DIR, "index.ts")
+    if (!fs.existsSync(PLUGINS_CACHE_DIR)) {
+      fs.mkdirSync(PLUGINS_CACHE_DIR, { recursive: true })
+    }
+    if (!fs.existsSync(indexPath)) {
+      const stubContent = [
+        `export const plugins: Record<string, Record<string, (...args: unknown[]) => void>> = {}`,
+        `export const CustomOgImagesEmitterName = "CustomOgImages"`,
+        `export type ContentDetails = {`,
+        `  slug: any`,
+        `  filePath: any`,
+        `  title: string`,
+        `  links: string[]`,
+        `  tags: string[]`,
+        `  content: string`,
+        `  richContent?: string`,
+        `  date?: Date`,
+        `  description?: string`,
+        `}`,
+      ].join("\n") + "\n"
+      fs.writeFileSync(indexPath, stubContent)
+      console.log("Generated minimal .quartz/plugins stub for clean build.")
+    }
     return
   }
 
