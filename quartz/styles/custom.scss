@@ -6,7 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-rendering: optimizeLegibility;
   border-bottom: 1px solid var(--lightgray);
   padding-bottom: 0.3rem;
@@ -14,11 +15,12 @@ h1, h2 {
 }
 
 .explorer {
-  .folder-container, .nav-file-title {
+  .folder-container,
+  .nav-file-title {
     padding: 0.2rem 0;
     transition: all 0.2s ease;
     border-radius: 4px;
-    
+
     &:hover {
       color: var(--tertiary);
       background-color: var(--highlight);
@@ -41,9 +43,11 @@ h1, h2 {
 .graph-container {
   svg {
     circle {
-      transition: r 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), fill 0.3s ease;
+      transition:
+        r 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        fill 0.3s ease;
       cursor: pointer;
-      
+
       &:hover {
         r: 6px !important;
         fill: var(--tertiary) !important;
@@ -51,16 +55,18 @@ h1, h2 {
         stroke-width: 2px;
       }
     }
-    
+
     line {
-      transition: stroke 0.3s ease, stroke-width 0.3s ease;
+      transition:
+        stroke 0.3s ease,
+        stroke-width 0.3s ease;
     }
   }
 }
 #quartz-body > .sidebar {
   margin-top: 0 !important;
   padding-top: 2rem !important;
-  
+
   & > * {
     margin-top: 0 !important;
     margin-bottom: 1.5rem !important;

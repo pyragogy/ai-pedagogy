@@ -1,45 +1,33 @@
----
-title: AI-Augmented Human Thinking Pedagogy
-layout: list
----
+# AI-Augmented Human Thinking Pedagogy
 
-What happens to human cognition when a machine can generate a plausible answer in under a second?
+This syllabus is a living map for learning with AI without becoming passive in front of it.
 
-This project maps one specific response to that question: a framework for learning *with* AI without thinking *through* it. The framework is called **Pyragogy**. It rests on a single bet — that the right amount of **cognitive friction**, applied at the right moment, is what keeps the human in the loop.
+Most educational AI tools try to remove effort. They answer faster, summarize faster, generate faster. Pyragogy starts from the opposite idea: some forms of difficulty are not bugs. They are where thinking happens.
 
----
+Here, AI is not treated as an oracle or a servant. It is used as a peer: a cognitive partner that questions, resists, mirrors, and helps the learner see where their reasoning is still weak.
 
-## 📚 The Core Bookshelf
+## What this ecosystem is for
 
-Three handbooks, three developmental stages:
+- **Preserving cognitive sovereignty**: the learner remains responsible for judgment.
+- **Turning friction into learning**: AI introduces resistance before premature answers.
+- **Mapping human-AI development**: the syllabus tracks how dependency can evolve into co-agency and autonomy.
 
-| Stage | Text | What it covers |
-|---|---|---|
-| Early development | [[embodied_foundation]] | Sensory-motor learning, schema formation, ontogeny < 2.5 |
-| Adolescence | [[adolescent_sparring_arena]] | Debate, independent thinking, bias recognition |
-| Adult practice | [[adult_reflective_practice]] | Professional hybrid intelligence, reflective practice |
+## The Core Bookshelf
 
----
+| Stage             | Manual                        | Purpose                                                    |
+| ----------------- | ----------------------------- | ---------------------------------------------------------- |
+| Early Development | [[embodied_foundation]]       | Build attention, embodiment, and first cognitive schemas.  |
+| Praxis            | [[adolescent_sparring_arena]] | Use AI as a sparring partner instead of an answer machine. |
+| Autonomy          | [[adult_reflective_practice]] | Integrate AI into real work without outsourcing judgment.  |
 
-## 🗺️ The Evolutionary Syllabus
+## How to read this syllabus
 
-The sidebar organises knowledge by developmental layer. Read it as a sequence or jump to whatever is relevant:
+Do not read it as a linear course.
 
-1. **[Foundations](01_foundations)** — The epistemic principles and the axis system that maps the whole framework.
-2. **[Ontogeny](02_ontogeny)** — Early childhood learning patterns and the embodied cognitive base.
-3. **[Praxis](03_praxis)** — Active co-agency: Socratic sparring, reasoning trails, collaborative prototyping.
-4. **[Autonomy](04_autonomy)** — How learners graduate from scaffolding to independent judgment.
-5. **[Systemic Risks](05_systemic_risks)** — Automation bias, cognitive offloading, epistemic dependency, fluency heuristic.
-6. **[Protocols](06_protocols)** — Concrete friction escalation loops and anti-convergence routines.
-7. **[Cases](07_cases)** — Field study logs and empirical validations.
-8. **[References](08_references)** — Evidence maps and bibliography.
+Read it as a map.
 
----
+Each note is a node in a larger learning ecology. Some nodes describe practices. Some describe risks. Some describe protocols. Their links show how human agency can be strengthened, weakened, challenged, or repaired through interaction with AI.
 
-## ⚡ What this is for
+The goal is not to make learning easier.
 
-The graph at the right is not decorative. Every node has coordinates on three axes — **Ontogeny** (developmental stage), **Praxis** (action/friction intensity), **Autonomy** (decision-making sovereignty) — and every edge is typed: *reinforces*, *contradicts*, *enables*, *threatens*.
-
-The goal is a knowledge map where relations are computable, not just implied. Where a claim about cognitive risk is connected to the practice that mitigates it, and where the practice is connected to the developmental phase where it applies.
-
-Use the search, follow the graph, break a link, and file an issue.
+The goal is to keep learning alive.

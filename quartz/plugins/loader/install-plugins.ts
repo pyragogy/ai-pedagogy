@@ -20,7 +20,10 @@ async function main() {
       const parsed = YAML.parse(raw)
       externalPlugins = parsed?.externalPlugins || []
     } catch (err) {
-      console.warn("Failed to parse config YAML statically, falling back to empty external plugins list:", err)
+      console.warn(
+        "Failed to parse config YAML statically, falling back to empty external plugins list:",
+        err,
+      )
     }
   }
 
