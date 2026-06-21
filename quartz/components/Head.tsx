@@ -106,6 +106,12 @@ export default (() => {
             return resource
           }
         })}
+        {/* Privacy-friendly analytics by Plausible */}
+        <script async src="https://plausible.pyragogy.org/js/pa-wwNITpXj-cLVqdZAlp9YN.js"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+        ` }} />
       </head>
     )
   }

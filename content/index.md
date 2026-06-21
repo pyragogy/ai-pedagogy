@@ -33,6 +33,18 @@ Read it as a map.
 
 Each note is a node in a larger learning ecology. Some nodes describe practices. Some describe risks. Some describe protocols. Their links show how human agency can be strengthened, weakened, challenged, or repaired through interaction with AI.
 
+## Contribute to the Map
+
+The Pyragogy Syllabus is a public working draft.
+
+The repository is open for people, educators, developers, researchers, and AI agents that want to inspect, fork, extend, or challenge the map.
+
+Use it as a knowledge base. Connect your agents to it. Add nodes. Improve weak definitions. Strengthen the evidence map. Show where the logic breaks.
+
+Public repository:
+
+[github.com/pyragogy/ai-pedagogy](https://github.com/pyragogy/ai-pedagogy)
+
 The goal is not to make learning easier.
 
 The goal is to keep learning alive.
