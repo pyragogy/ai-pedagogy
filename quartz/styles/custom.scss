@@ -119,12 +119,12 @@ h2 {
   --highlight: rgba(52, 211, 153, 0.14) !important;
   --textHighlight: rgba(52, 211, 153, 0.22) !important;
 
-  --graph-node: #34d399 !important;
+  --graph-node: #6ee7b7 !important;
   --graph-node-attachment: #10b981 !important;
   --graph-node-tag: rgba(52, 211, 153, 0.4) !important;
-  --graph-node-unresolved: #71717a !important;
-  --graph-node-focused: #34d399 !important;
-  --graph-line: rgba(52, 211, 153, 0.15) !important;
+  --graph-node-unresolved: #a1a1aa !important;
+  --graph-node-focused: #a7f3d0 !important;
+  --graph-line: rgba(52, 211, 153, 0.25) !important;
 }
 
 a,
@@ -182,3 +182,28 @@ span.text-highlight {
   }
 }
 
+// Graph View UI/UX Enhancements
+.graph-outer.global-graph-outer {
+  background-image: radial-gradient(var(--lightgray) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-color: var(--light);
+}
+
+.graph-container svg circle {
+  &:hover {
+    filter: drop-shadow(0 0 4px var(--tertiary));
+  }
+}
+
+// Color coding for specific node types
+.graph-container svg circle.node[data-tags*="risk"],
+.graph-container svg circle.node[data-tags*="type/risk"] {
+  fill: #ef4444 !important;
+  stroke: #dc2626 !important;
+}
+
+.graph-container svg circle.node[data-tags*="protocol"],
+.graph-container svg circle.node[data-tags*="type/protocol"] {
+  fill: #3b82f6 !important;
+  stroke: #2563eb !important;
+}

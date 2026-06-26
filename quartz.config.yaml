@@ -170,11 +170,17 @@ plugins:
         showTags: true
         removeTags:
           - pyragogy
+        repelForce: 0.8
+        linkDistance: 45
+        fontSize: 0.8
       globalGraph:
         depth: 2
         showTags: true
         removeTags:
           - pyragogy
+        repelForce: 1.0
+        linkDistance: 50
+        fontSize: 0.8
     layout:
       position: right
       priority: 10
