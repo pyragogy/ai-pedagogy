@@ -1,5 +1,9 @@
 @use "./variables.scss" as *;
 
+html {
+  color-scheme: dark;
+}
+
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
