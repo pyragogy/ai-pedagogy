@@ -9,6 +9,7 @@ unlisted: true
     src="https://app.trugen.ai/embed/13a34647-a3ce-431f-8792-ea649e6e53cc" 
     title="TruGen AI Research Teammate" 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 1;"
+    allow="microphone; camera"
     onload="document.getElementById('trugen-loading').style.display = 'none';"
   ></iframe>
 </div>

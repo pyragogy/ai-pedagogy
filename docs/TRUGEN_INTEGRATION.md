@@ -31,6 +31,7 @@ If you ever need to replace or update the Agent ID, simply open `content/trugen-
 <iframe 
   src="https://app.trugen.ai/embed/YOUR-NEW-AGENT-ID" 
   title="TruGen AI Research Teammate" 
+  allow="microphone; camera"
   ...
 ></iframe>
 ```
