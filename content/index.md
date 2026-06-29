@@ -17,6 +17,24 @@ Here, AI is not treated as an oracle or a servant. It is used as a peer: a cogni
 - **Turning friction into learning**: AI introduces resistance before premature answers.
 - **Mapping human-AI development**: the syllabus tracks how dependency can evolve into co-agency and autonomy.
 
+## Talk with the Pyragogy Research Teammate
+
+Knowledge does not evolve because AI generates more text.
+
+It evolves when human reasoning becomes explicit, challengeable and reviewable.
+
+The Pyragogy Research Teammate conducts structured cognitive interviews based on the Cognitive Interview Protocol (CIP-KGE).
+
+Its goal is not to answer questions.
+
+Its goal is to learn from researchers, educators and practitioners, identify possible improvements to the Pyragogy Syllabus, and produce reviewable Knowledge Patches when sufficient evidence exists.
+
+No conversation automatically changes the knowledge graph.
+
+Every proposal is transparent, reviewable and validated by humans.
+
+![[trugen-teammate]]
+
 ## The Core Bookshelf
 
 | Stage             | Manual                        | Purpose                                                    |
