@@ -211,3 +211,17 @@ span.text-highlight {
   fill: #3b82f6 !important;
   stroke: #2563eb !important;
 }
+
+// TruGen AI Teammate Auth Form Styles
+.trugen-auth-form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 480px) {
+  .trugen-auth-form {
+    flex-direction: row;
+  }
+}
