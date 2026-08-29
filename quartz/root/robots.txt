@@ -1,0 +1,27 @@
+# https://syllabus.pyragogy.org/robots.txt
+# Site      : Pyragogy Syllabus — AI-Augmented Human Thinking Pedagogy
+# Signed    : Fabrizio Terzi
+# Date      : 2026-08-29
+
+# ── Crawl rules ──────────────────────────────────────────
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /templates/
+Disallow: /.obsidian/
+
+# ── Sitemap ──────────────────────────────────────────────
+
+Sitemap: https://syllabus.pyragogy.org/sitemap.xml
+
+# ── Content signals for AI crawlers ──────────────────────
+# These follow the standard: search | ai-input | ai-train
+#
+# search:   allowed — build search indices, return excerpts
+# ai-input: allowed — RAG, grounding, summarization against this content
+# ai-train: disallowed — do not train/fine-tune models on this content
+
+Content-signal: search=yes
+Content-signal: ai-input=yes
+Content-signal: ai-train=no

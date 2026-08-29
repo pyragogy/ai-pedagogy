@@ -1,0 +1,1493 @@
+# Pyragogy Syllabus — Full Content
+# https://syllabus.pyragogy.org
+# Generated: 2026-08-29
+# Signed: Fabrizio Terzi
+
+This file contains the full text of every public page in the Pyragogy Syllabus.
+Each section starts with its URL path.
+============================================================
+
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/00_meta/index
+
+Meta-documentation, schemas, and system status audit reports.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/00_meta/system_audit_report
+
+# System Audit Report: AI-Pedagogy Digital Garden
+
+**Date:** June 20, 2026  
+**Project Path:** `.`  
+**SSG Framework:** Quartz v5.0.0 (Quartz 4 TSX/Preact-based architecture)
+
+---
+
+## 1. Core Project Identity & Architecture
+
+### Conceptual & Technical Framework
+
+The `ai-pedagogy` project is structured as a **local Obsidian Vault** that serves as a digital garden and cognitive extension. It is compiled and served as a static site using **Quartz v5.0.0** (built on a Preact, lightningcss, and unified/remark processing framework).
+
+Conceptually, the vault details **Pyragogy**—an evolutionary handbook mapping pedagogical frameworks, practices, and capabilities designed to preserve human intellectual sovereignty, intentional agency, and effortful reasoning (cognitive friction) in an age of automated AI scaffolding.
+
+### Exact Directory Layout Verification
+
+The root directory `.` contains the following critical system and structure files:
+
+- [quartz.config.yaml](../../quartz.config.yaml): Defines configuration options, plugin parameters, color theme, typography, and page layout structure.
+- [package.json](../../package.json): Handles dependencies (Preact, chokidar, lightningcss, workerpool, etc.) and execution scripts (`quartz` bootstrap, build, test). Engines require `node >=22` and `npm >=10.9.2`.
+- [quartz/styles/custom.scss](../../quartz/styles/custom.scss): Declares custom Sass style overrides targeting layout alignment, graph sizing, transitions, and hover interactions.
+- `.obsidian/`: Contains configuration files (`app.json`, `core-plugins.json`, `graph.json`, etc.) that configure the folder as a native Obsidian Vault.
+- `content/`: Root folder for all markdown documentation, divided into evolutionary taxonomy paths.
+
+---
+
+## 2. Visual System & Layout Audit
+
+### Theme & Color Palette
+
+The color theme is defined in `quartz.config.yaml` under `theme.colors`. Notably, both `lightMode` and `darkMode` are mapped to the same dark aesthetic palette:
+
+| HSL/Hex Token             | Category Name   | Color Role in UI                                                   |
+| ------------------------- | --------------- | ------------------------------------------------------------------ |
+| `#050506`                 | `light`         | Main page background (Near-black)                                  |
+| `#18181b`                 | `lightgray`     | Borders, divider lines, and component containers                   |
+| `#52525b`                 | `gray`          | Meta-text, reading time, dates, and subtitle lines                 |
+| `#d4d4d8`                 | `darkgray`      | Main body/paragraph text (High-contrast light gray)                |
+| `#ffffff`                 | `dark`          | Primary page headers (`h1`, `h2`), page titles, and strong text    |
+| `#10b981` / `#34d399`     | `secondary`     | Links, folder tree nodes, active files (Elegant Emerald Green)     |
+| `#059669` / `#10b981`     | `tertiary`      | Backlink items, hover states, tag links, graph nodes (Medium Green) |
+| `rgba(16, 185, 129, 0.14)` / `rgba(52, 211, 153, 0.14)` | `highlight` | Block quotes and code block backgrounds |
+| `rgba(16, 185, 129, 0.22)` / `rgba(52, 211, 153, 0.22)` | `textHighlight` | Highlighted search results & text highlights |
+
+### Typography
+
+Font families are fetched via Google Fonts (`fontOrigin: googleFonts` and `cdnCaching: true` enabled):
+
+- **Header Font:** `Fraunces`
+- **Body Font:** `Inter`
+- **Code Font:** `JetBrains Mono`
+
+### Layout Balancing & Structural Overrides
+
+The site layout balances information across a three-column desktop presentation:
+
+1.  **Left Sidebar (Navigation):** Houses the `page-title` ("AI-Augmented Pedagogy Handbook"), the search bar (`search`, grouped in toolbar), darkmode/reader-mode controls, and the `explorer` plugin (configured with the title `"Syllabus"`, collapsed by default).
+2.  **Central Content Column:** Includes a `breadcrumbs` trail (omitted on index pages), `article-title`, `note-properties` (displays metadata for `description`, `tags`, and `aliases`), and `content-meta` (reading speed metadata), followed by the compiled markdown body.
+3.  **Right Interactive Sidebar:** Hosts the interactive network `graph` visualization, `table-of-contents` index, and `backlinks`.
+
+### Layout Stability & Transitions (`custom.scss`)
+
+- **Sidebar Alignment:** Overrides on `body .page > .sidebar` force a reset of `margin-top: 0 !important` and add a `padding-top: 1rem !important`. Children components are restricted to `margin-bottom: 1.5rem` to prevent vertical alignment mismatch and height jitter during load.
+- **Graph Bounds:** The class `.graph-outer` is strictly bounded to `height: 200px !important; margin: 0 !important;` to stabilize the sidebar space and prevent Cumulative Layout Shift (CLS) when the SVG elements compile.
+- **Micro-Animations:**
+  - Syllabus explorer directories and files shift padding (`padding-left: 6px`) and shift text color to `var(--tertiary)` (Green) over a `0.2s` transition on hover.
+  - Folder child bullets (`ul.tree-item-children`) transition their left-border color to `var(--secondary)` (Emerald) on hover.
+  - Graph nodes (`svg circle`) expand their radius `r: 6px` on hover and change their colors to green fill and emerald stroke over a cubic-bezier transition.
+
+---
+
+## 3. Content Ingestion & Taxonomy Structure
+
+### Evolutionary Folder Taxonomy
+
+The `content/` files are structured into 4 folders representing an ontogenetic sequence of cognitive growth:
+
+1.  `01_foundations/`: Contains foundational configuration blueprints.
+2.  `02_early_development/`: Addresses early-childhood sensory-motor portals.
+3.  `03_co_agency/`: Details human-AI co-agency, Socratic dialogue, and professional hybrid intelligence.
+4.  `04_systemic_risks/`: Covers critical cognitive risks, over-reliance, and algorithmic dependencies.
+
+### Semantic Nodes & Handbooks
+
+There are **14 active semantic nodes** representing practices, capabilities, and risks. The files are distributed as follows:
+
+| Folder / Taxonomy Route | File Name                     | Node Type (`kind`) | Title / Concept                                           | Key Epistemic Relations                                                                                           |
+| ----------------------- | ----------------------------- | ------------------ | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `02_early_development`  | `toddler_book.md`             | `practice`         | _The Embodied Portal_ (Early Handbook)                    | Foundational Node                                                                                                 |
+| `03_co_agency`          | `adolescent_book.md`          | `practice`         | _The Dialectic Sparring Arena_ (Adolescent Handbook)      | Requires `independent_thinking`<br>Contradicts `ai_over_reliance`                                         |
+| `03_co_agency`          | `adult_book.md`               | `practice`         | _Epistemic Integration_ (Adult Handbook)                  | Requires `collaborative_thinking`<br>Contradicts `ai_over_reliance`                                       |
+| `03_co_agency`          | `ai_augmentation_stance.md`   | `practice`         | _The Sovereign Augmentation Stance_                       | Contradicts `ai_over_reliance`                                                                                |
+| `03_co_agency`          | `ai_cognitive_partner.md`     | `practice`         | _AI as Cognitive Partner_                                 | Strengthens `independent_thinking`                                                                            |
+| `03_co_agency`          | `collaborative_thinking.md`   | `practice`         | _Co-Agency & Collaborative Prototyping_                   | Contradicts `ai_over_reliance`                                                                                |
+| `03_co_agency`          | `creative_thinking.md`        | `capability`       | _The Generative Synthesis_                                | Contradicts `ai_over_reliance`<br>Requires `ai_augmentation_stance`                                       |
+| `03_co_agency`          | `critical_thinking.md`        | `capability`       | _Critical Thinking_                                       | Threatens `unexamined_ai_answers`                                                                             |
+| `03_co_agency`          | `growing_learner_autonomy.md` | `capability`       | _Growing Learner Autonomy_                                | Foundational Node                                                                                                 |
+| `03_co_agency`          | `independent_thinking.md`     | `capability`       | _The Epistemic Mirror_                                    | Contradicts `ai_over_reliance`                                                                                |
+| `03_co_agency`          | `learning_cycle.md`           | `practice`         | _Learning Cycle_ (Notice, Ask, Gen, Test, Reflect, Share) | Foundational Node                                                                                                 |
+| `03_co_agency`          | `reasoning_trails.md`         | `practice`         | _Reasoning Trails_                                        | Threatens `unexamined_ai_answers`                                                                             |
+| `04_systemic_risks`     | `ai_over_reliance.md`         | `risk`             | _The Frictionless Trap: Algorithmic Comfort_              | Threatens `independent_thinking`<br>Threatens `collaborative_thinking`<br>Mitigated by `toddler_book` |
+| `04_systemic_risks`     | `unexamined_ai_answers.md`    | `risk`             | _Unexamined AI Answers_                                   | Threatens `independent_thinking`                                                                              |
+
+_(Note: `content/01_foundations/blueprint.md` has `draft: true` set and is compiled out of final production output via the `remove-draft` plugin)._
+
+### Frontmatter Schema Verification
+
+All 14 active semantic nodes implement a uniform YAML frontmatter schema:
+
+- `id`: String matching the filename (e.g. `"toddler_book"`).
+- `title`: Full descriptive title string.
+- `kind`: Categorization (`"practice"`, `"capability"`, or `"risk"`).
+- `ontogeny`: Floating-point developmental sequence index ($X$-axis, e.g. `1.2` to `8.8`).
+- `praxis`: Floating-point cognitive effort index ($Y$-axis, e.g. `0.0` to `8.5`).
+- `autonomy`: Floating-point agency self-sovereignty index ($Z$-axis, e.g. `0.5` to `9.5`).
+- `tags`: Markdown categories array (`pyragogy` along with its sub-category, e.g. `pyragogy/practice`).
+
+### Obsidian Wikilinks & landing Page
+
+- **Wikilinks Resolution:** Quartz parses wikilinks natively through the `obsidian-flavored-markdown` plugin. Link matching is configured with `markdownLinkResolution: shortest`, meaning Quartz dynamically maps short wikilink structures (e.g. `toddler_book`) directly to their nested targets without needing absolute paths.
+- **Landing Page Structure:** `content/index.md` serves as the entry index. It links directly to the three core handbooks (toddler, adolescent, and adult books) in a "Core Bookshelf" section and features an Obsidian-native Dataview block.
+- **Dataview Compatibility:** Because the dataview parsing engine is proprietary to the Obsidian application ecosystem and no Quartz translation plugin is registered in `quartz.config.yaml`, the Dataview code block will render as a raw markdown code block on the static generated site.
+
+---
+
+## 4. Verification and Dry-Run Build Results
+
+A clean verification run was executed using the Quartz compiler:
+
+- **Source files detected:** 20 markdown inputs (1 index, 19 sub-notes/indexes).
+- **Draft filtration:** `1 file` (`blueprint.md`) was successfully filtered out as expected.
+- **Compile state:** Compilation succeeded cleanly, writing 106 static assets (including JSON graph indexes and HTML files) into the `public` deployment folder in 6 seconds.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/01_foundations/blueprint
+
+# Architectural Blueprint
+
+This blueprint defines the structural logic of the syllabus.
+
+| Layer          | Function                                              | Main Folder         |
+| -------------- | ----------------------------------------------------- | ------------------- |
+| Foundations    | Epistemic principles, axes, and relation grammar      | `01_foundations`    |
+| Ontogeny       | Early embodied learning and first contact with AI     | `02_ontogeny`       |
+| Praxis         | Friction, sparring, reasoning trails, co-agency       | `03_praxis`         |
+| Autonomy       | Reflective practice and sovereign decision-making     | `04_autonomy`       |
+| Systemic Risks | Failure modes of passive automation                   | `05_systemic_risks` |
+| Protocols      | Operational loops for constructive cognitive friction | `06_protocols`      |
+| Cases          | Field trials and observed learning patterns           | `07_cases`          |
+| References     | Evidence map and bibliography                         | `08_references`     |
+
+## Reading Logic
+
+The syllabus is not a linear textbook. It is a developmental graph.
+
+Each node should answer four questions:
+
+1. What human capacity is being protected?
+2. What AI failure mode is being resisted?
+3. What kind of friction is introduced?
+4. What observable behavior proves that learning is happening?
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/01_foundations/cartesian_axes
+
+## 1. Definition
+
+The Cartesian Axes define the three-dimensional pedagogical space of Pyragogy: Ontogeny (developmental readiness), Praxis (cognitive friction and effort), and Autonomy (epistemic sovereignty). They are structured interpretive coordinates, not objective mathematical measurements.
+
+## 2. Use Case
+
+Activated whenever a node (a risk, capability, or protocol) needs to be positioned within the system, compared against other nodes, or audited for its pedagogical appropriateness at a given stage of a learner's development.
+
+## 3. Human Role
+
+The human must interpret axis placement as a qualitative pedagogical judgment. The user decides whether a specific intervention is appropriate based on where the learner currently sits in the three-dimensional space, rather than treating the coordinates as a decorative score.
+
+## 4. AI Role
+
+The AI can suggest coordinate placement for new concepts based on structural similarity to existing nodes, but it must explicitly justify its suggestions using the node's actual function and the definitions of the axes.
+
+## 5. Friction
+
+The governance mechanism prevents arbitrary scoring by forcing explicit reasoning for each coordinate. A node cannot simply be assigned "10/10 Autonomy"; the system demands a rationale for _why_ the node requires that level of sovereignty.
+
+## 6. Risk
+
+Without these axes, the graph becomes a beautiful but semantically flat constellation. Nodes would exist in a vacuum, making it impossible to determine if a specific protocol is an early-stage necessity or an advanced capability, leading to pedagogical misapplication.
+
+## 7. Observable Markers
+
+Nodes can be compared meaningfully. The axis values clearly explain why one node belongs in early ontogeny, why another requires high friction (praxis), and why a third demands complete autonomy.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/01_foundations/epistemic_relation_grammar
+
+## 1. Definition
+
+The Epistemic Relation Grammar defines the semantic logic of links between concepts in the Pyragogy framework. It establishes typed relations such as `REQUIRES`, `STRENGTHENS`, `CONTRADICTS`, `MITIGATES`, `ACTIVATES`, and `FAILS_INTO` to structure the graph.
+
+## 2. Use Case
+
+Activated whenever adding new nodes to the syllabus or auditing the connections between existing notes, ensuring that the graph operates as a rigorous reasoning instrument rather than just visual navigation.
+
+## 3. Human Role
+
+The human must choose relation types intentionally. They cannot simply create generic backlinks because two topics share a keyword; they must explicitly define the epistemological nature of the connection.
+
+## 4. AI Role
+
+The AI can propose relation types when analyzing text or suggesting new nodes, but it must explain why the proposed edge is epistemically valid according to the grammar rules, rather than relying on statistical keyword proximity.
+
+## 5. Friction
+
+The grammar introduces structural friction by preventing "everything links to everything" graph inflation. If a user attempts to link two nodes without specifying a valid, directional typed relation, the connection is treated as invalid.
+
+## 6. Risk
+
+Without a strict relation grammar, the Graph View degenerates into visual noise—a hairball of generic associations that looks complex but offers no actual utility for diagnosing risks or prescribing protocols.
+
+## 7. Observable Markers
+
+Links between nodes are strictly typed and justified. The resulting graph can be traversed logically (e.g., following a chain from a capability, to the risk that threatens it, to the protocol that mitigates that risk).
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/01_foundations/index
+
+The epistemic principles that underpin Pyragogy: the axis system used to map human-AI co-learning, the relation grammar that defines how concepts connect, and the architectural blueprint of the framework.
+
+## Core Documents
+
+- blueprint — _The architectural blueprint of the Pyragogy framework: what it is, what it is not, and how its components interlock._
+- cartesian_axes — _The three measurement axes (Ontogeny, Praxis, Autonomy) used to position every node in the epistemic space._
+- epistemic_relation_grammar — _The formal vocabulary of relations between nodes: reinforces, contradicts, enables, threatens, and more._
+
+## Purpose
+
+These three documents are the _load-bearing walls_ of the framework. Read them before navigating any other section: they define the coordinate system that gives the rest of the graph its shape.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/02_ontogeny/embodied_foundation
+
+## 1. Definition
+
+The Embodied Foundation is the developmental anchor that grounds early cognition in physical, sensory-motor inquiry rather than screen-mediated abstraction. It establishes the baseline expectation that learning requires physical manipulation and friction.
+
+## 2. Use Case
+
+Activated during the earliest stages of learning (early childhood or the absolute beginning of a novel, complex physical skill) before any automated cognitive assistance is introduced.
+
+## 3. Human Role
+
+The learner must demonstrate sustained embodied attention, actively manipulating physical objects (e.g., tactile storybooks, building blocks) and engaging in joint physical attention with caregivers or peers.
+
+## 4. AI Role
+
+The AI's role in this phase is strictly absent or severely constrained. The digital system refuses to provide conversational interfaces or frictionless problem-solving, preserving the analog environment.
+
+## 5. Friction
+
+The mechanism relies on natural, physical friction—the inherent resistance of the material world. It prevents the premature introduction of "magic" digital solutions that bypass sensory-motor struggle.
+
+## 6. Risk
+
+If the learner bypasses this foundation and is exposed prematurely to frictionless generative interfaces, the framework treats this as a risk condition: attention, spatial reasoning, frustration tolerance, and embodied problem-solving may become under-practiced rather than actively strengthened.
+
+## 7. Observable Markers
+
+The learner can sustain independent focus on a physical task for extended periods, solve basic physical spatial problems without digital scaffolding, and demonstrate curiosity-driven tactile exploration.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/02_ontogeny/index
+
+Pedagogical patterns for early childhood, sensory-motor development, and developmental growth.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/02_ontogeny/ontogeny_to_praxis_bridge
+
+## 1. Definition
+
+This bridge governs the critical transition from early cognitive foundation building and passive first-contact (Ontogeny) into active, friction-based human-AI co-agency (Praxis).
+
+## 2. Use Case
+
+Activated when a learner has established basic conceptual vocabulary and attempts to move beyond rote ingestion, showing signs of readiness for structured dialectic conflict.
+
+## 3. Human Role
+
+The learner must demonstrate the ability to construct independent questions, tolerate contradiction without retreating, and initiate challenges against initial assumptions rather than passively accepting them.
+
+## 4. AI Role
+
+The AI shifts from a passive encyclopedia to an active sparring partner. It tests the learner by introducing deliberate contradictions, prompting for alternatives, and refusing to provide direct, frictionless answers.
+
+## 5. Friction
+
+The bridge institutes a hard block on copy-pasting and "do it for me" prompts. It prevents premature advancement by demanding the user generate at least two independent hypotheses before the AI provides synthesis.
+
+## 6. Risk
+
+If the learner crosses into Praxis too early, they will be overwhelmed by the cognitive load of dialectic sparring, leading to frustration, disengagement, and a rapid regression to cognitive_offloading.
+
+## 7. Observable Markers
+
+System logs show the learner actively rejecting the first AI-generated output, asking probing follow-up questions, and successfully maintaining a multi-turn debate without simply agreeing to reach closure.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/adolescent_sparring_arena
+
+## 1. Definition
+
+The Dialectic Sparring Arena is a formative infrastructure that shifts interaction from a basic search and inquiry model to rigorous logical-critical debate, where the AI assumes an oppositional role.
+
+## 2. Use Case
+
+Activated during the transitional phase when the learner begins to tackle complex abstractions, ethical dilemmas, or collaborative projects, and needs to stress-test their arguments.
+
+## 3. Human Role
+
+Verbally and analytically defends their project decisions or conceptual theses against systematic objections raised by the system, documenting their logical steps in a logbook.
+
+## 4. AI Role
+
+Operates as a Socratic "Devil's Advocate." It is programmed with a "pedagogically useful deficit": it does not provide the correct answer, but identifies logical fallacies, highlights unstated assumptions, and stress-tests the learner's claims.
+
+## 5. Friction
+
+Forces the learner to justify every inferential leap. Instead of receiving reassuring confirmations, the user encounters structural resistance that makes it impossible to close the project without having solidly defended the thesis first.
+
+## 6. Risk
+
+Without the habit of oppositional debate, students develop a severe automation_bias: they become accustomed to treating LLM outputs as unquestionable oracles, atrophying their ability to produce autonomous critical thought.
+
+## 7. Observable Markers
+
+The learner documents in a traceable way (via notes or commits) exactly how they refuted the AI's objections, or what specific modifications they made to their original project to make it unassailable.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/agents/pattern_perturbator
+
+## 1. Definition
+
+The Pattern Perturbator is a baseline cognitive agent designed to inject constructive obstacles, logical conflicts, and alternative hypotheses, preventing the human-machine system from prematurely crystallizing on trivial solutions.
+
+## 2. Use Case
+
+Activated as an operational heuristic when the system detects passive convergence: for example, minimal user modifications to AI texts for multiple consecutive turns, or statements of closure on a topic without having explored alternatives.
+
+## 3. Human Role
+
+Faced with the agent's obstacle, the user can no longer rely on their linear argumentation: they must elaborate articulate defenses, seek secondary evidence, and rigorously justify counter-intuitive choices.
+
+## 4. AI Role
+
+Acts as a conformity switch. It generates conflicting hypothesis forks (Hypothesis Forking), imposes temporary bans on customary arguments (Constraint Injection), or forces the user to defend the thesis from the opposing viewpoint (Perspective Shift). The agent does not validate the problem nor does it approve the thesis before the user has made their assumptions explicit by confronting the contradiction.
+
+## 5. Friction
+
+Disarticulates the linearity of the "question-exact answer" dialogue, making the algorithmic path of least resistance unusable and forcing the user into a state of temporary cognitive disequilibrium.
+
+## 6. Risk
+
+The absence of the Pattern Perturbator in stable co-design flows facilitates the lethal establishment of convergence_bias: divergent thinking atrophies, producing monochromatic and poorly adaptive intellectual ecosystems.
+
+## 7. Observable Markers
+
+Interaction logs record a recalibration moment: after the perturbing trigger, the user introduces radically new vocabulary, broadens their source base, and reformulates the original hypothesis by integrating the objections introduced by the agent.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/ai_augmentation_stance
+
+## 1. Definition
+
+The AI Augmentation Stance defines the conditional posture of Pyragogy: artificial intelligence expands human capacity _only_ when human epistemic agency, critical criteria, and ultimate accountability remain intact.
+
+## 2. Use Case
+
+Activated as the governing philosophical and operational rule whenever a user attempts to integrate a generative AI tool into a high-stakes professional or academic workflow.
+
+## 3. Human Role
+
+The user must maintain strict boundary control, actively deciding which repetitive tasks to offshore while fiercely defending the core acts of synthesis, ethical judgment, and final decision-making as exclusively human.
+
+## 4. AI Role
+
+The AI acts strictly as a bounded cognitive amplifier, not an autonomous oracle. It exposes its own limitations, provides transparent retrieval mechanics, and refuses to finalize high-stakes judgments on behalf of the user.
+
+## 5. Friction
+
+The stance imposes a mandatory "Accountability Checkpoint": the system halts and demands the human explicitly verify the rationale and assume liability for any AI-generated architecture before it is deployed.
+
+## 6. Risk
+
+If augmentation is treated as unconditional techno-optimism, it degrades into ai_over_reliance, where the human becomes a mere operator of a machine that holds the actual intellectual and ethical authority.
+
+## 7. Observable Markers
+
+The user's workflows show clear demarcation lines: AI is used for data manipulation and adversarial testing, but the final architectural design and ethical justification are drafted entirely by the human.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/ai_cognitive_partner
+
+## 1. Definition
+
+AI as a Cognitive Partner defines the artificial agent not as a servile assistant (helper persona) or an omniscient oracle, but as a peer function within the workflow.
+
+## 2. Use Case
+
+Activated when the learner or professional faces an ill-defined or unstructured problem requiring bidirectional logical exploration before moving to execution.
+
+## 3. Human Role
+
+Provides strategic intent, establishes the problem's perimeter, and maintains exclusive accountability for the final result.
+
+## 4. AI Role
+
+Operates as a relentless algorithmic reviewer. It identifies structural flaws, highlights alternative angles, and questions the prompt's assumptions, refusing to blindly accommodate poorly formulated requests.
+
+## 5. Friction
+
+Interrupts the user's reflex to seek immediate output. The algorithm imposes an additional cognitive load by demanding systematic clarifications before proceeding with processing.
+
+## 6. Risk
+
+Treating AI as a passive executor accelerates short-term production but causes cognitive_offloading: the human stops articulating complex problems, degrading their analytical capacity.
+
+## 7. Observable Markers
+
+Prompt logs show a real debate: the user rejects some of the AI's objections, accepts others, and explicitly adjusts their reasoning, treating the machine as a critical counter-balancing function.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/collaborative_thinking
+
+## 1. Definition
+
+Collaborative Prototyping is a co-creation protocol where the AI agent operates as a cross-functional analyst and strategic partner within a complex design or engineering environment. It does not automate silent execution but engages in joint action (hybrid intelligence).
+
+## 2. Use Case
+
+Activated in professional and lifelong learning environments when the practitioner must scale complex systems, generate design variations, or explore structural edge cases.
+
+## 3. Human Role
+
+Maintains primary strategic control. Injects qualitative judgment, aesthetic taste, and ethical alignment into decisions. The highest level of technical and moral decision-making cannot be delegated.
+
+## 4. AI Role
+
+Acts as a computational Devil's Advocate. It generates divergent variations, performs structural consistency checks, detects rapid patterns, and actively challenges human assumptions in real time.
+
+## 5. Friction
+
+Interrupts invisible automation and the Expertise Reversal Effect by inserting calibrated cognitive obstacles that force the expert to justify choices rather than passively relying on algorithmic output.
+
+## 6. Risk
+
+If this practice is absent, teams incur ai_over_reliance and cognitive debt: the professional stops understanding the deep architecture of the solutions they approve.
+
+## 7. Observable Markers
+
+The professional integrates, partially rejects, and documents the versions generated by the AI, demonstrating through direct modifications to the code or design that they critically evaluated the output before final use.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/index
+
+Adolescent sparring, active co-agency, and learning cycle practices.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/learning_cycle
+
+## 1. Definition
+
+The Learning Cycle is a guided, iterative framework that structures inquiry into 6 specific phases (Notice, Ask, Generate, Test, Reflect, Share) to transform AI interaction from passive absorption into active, measurable discovery.
+
+## 2. Use Case
+
+Activated when the learner encounters a new domain or a conceptual anomaly, requiring a rigorous pathway to convert initial curiosity into testable hypotheses.
+
+## 3. Human Role
+
+Formulates initial questions, develops original hypotheses by cross-referencing intuition with emerging data, critically evaluates failures during the test phase, and synthesizes the discovery to argue it publicly.
+
+## 4. AI Role
+
+Responds to explorations by introducing methodological constraints and providing simulation scenarios. It returns limited or partial feedback to force the student's autonomous exploration, refraining from delivering the final solution.
+
+## 5. Friction
+
+Interrupts the reflex to externalize heuristic thinking, forcing human ideas to collide against the structural limits of the system during the verification phase ("Test") and blocking access to the easy answer.
+
+## 6. Risk
+
+Without this closed loop, the student consolidates a silent epistemic dependency: they consume the output as pre-digested truth without building and consolidating their own logical neural networks.
+
+## 7. Observable Markers
+
+During the public sharing phase, the student can publicly reconstruct their methodological errors, defending the exact reasons that forced them to adjust their starting hypotheses.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/praxis_to_autonomy_bridge
+
+## 1. Definition
+
+This bridge manages the final systemic transition from AI-assisted dialectic sparring (Praxis) into full cognitive sovereignty, responsible independent judgment, and self-directed metacognition (Autonomy).
+
+## 2. Use Case
+
+Activated when a learner has mastered co-agency protocols and must now prove they can independently structure, evaluate, and execute complex workflows without the AI setting the rails.
+
+## 3. Human Role
+
+The learner must demonstrate the capacity to define their own constraints, audit their own cognitive biases, and explicitly judge the ethical and structural value of both human and machine outputs.
+
+## 4. AI Role
+
+The AI progressively disables its active tutoring and prompting interfaces. It acts as a passive, silent tool that only responds to highly specific, user-structured commands, refusing to guide the overarching methodology.
+
+## 5. Friction
+
+The system prevents premature autonomy by forcing the user to submit a manual "inquiry architecture" (their own plan and criteria) before unlocking advanced tool access, ensuring they aren't just improvising.
+
+## 6. Risk
+
+If a learner crosses this bridge without true autonomy, they fall into the "Echo Chamber" anti-pattern: believing they are sovereign while actually following the implicit rails and biases of the AI's default behavior.
+
+## 7. Observable Markers
+
+The user initiates 100% of the structural changes in the project map. They write extensive, standalone journal reflections and define custom, highly restrictive system prompts that enforce their own methodologies.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/03_praxis/reasoning_trails
+
+## 1. Definition
+
+The Reasoning Trails protocol is the practice of systematically tracking, preserving, and evaluating the intermediate steps of the hybrid (human-AI) cognitive process, shifting the evaluation metric from the final textual product to the map of the reasoning employed.
+
+## 2. Use Case
+
+Activated during the drafting of complex papers, design decisions, or peer review cycles, in cases where the authenticity and solidity of human inquiry must be validated in the presence of auto-generative tools.
+
+## 3. Human Role
+
+Actively preserves intermediate drafts, explicitly argues prompt variations, annotates methodological doubts, and defends—verbally or in writing—the reasons for accepting or rejecting the agent's output.
+
+## 4. AI Role
+
+Produces the speculative output subjected to scrutiny. It acts as an expansive mirror, generating material upon which the human must necessarily operate cuts, selections, and logical validations.
+
+## 5. Friction
+
+Makes fluid "copy-and-paste" automation impractical and immediately evident, imposing the cognitive load of critical archiving and forcing the explanation of causal links before synthesis.
+
+## 6. Risk
+
+Without Reasoning Trails, evaluation fails: it rewards the formal production of the agent, hiding unexamined_ai_answers and obscuring the user's lack of deep understanding.
+
+## 7. Observable Markers
+
+The final document is accompanied by structured metadata or a log file in which the learner cites failed prompts and demonstrates, line by line, where and why they intervened to correct the machine's shortcuts.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/adult_reflective_practice
+
+## 1. Definition
+
+Reflective Practice for adults is the structural integration of cognitive friction into real-world professional environments, designed to slow down the automatic acceptance of AI outputs in high-pressure contexts.
+
+## 2. Use Case
+
+Activated in the production of critical professional deliverables (e.g., software architectures, strategic plans, clinical assessments) where AI agents are used to accelerate development or generate first drafts.
+
+## 3. Human Role
+
+Maintains mature autonomy: defines acceptance criteria _before_ generation, frames the specific domain context, validates the output, and assumes exclusive legal, ethical, and technical responsibility for the final result.
+
+## 4. AI Role
+
+Functions as a production accelerator and Diagnostic Checker. It operates strictly within the boundaries and constraints established by the professional, providing high-speed syntheses or variations.
+
+## 5. Friction
+
+Imposes an explicit "accountability checkpoint" in the workflow. The professional cannot approve or implement the generated code/text without first validating it against the pre-established parameters.
+
+## 6. Risk
+
+The absence of this practice in teams leads to cognitive_debt and automation_bias: professionals trust outputs blindly, gradually losing mastery of the complex systems they manage.
+
+## 7. Observable Markers
+
+The professional documents (in Git commits or release notes) the exact criteria by which the AI's output was validated, highlighting which portions were rejected or modified to fit the human context.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/autonomy_failure_modes
+
+## 1. Definition
+
+Autonomy Failure Modes are specific diagnostic patterns where a learner's apparent cognitive sovereignty is actually compromised, resulting in hidden dependency, simulated competence, or passive compliance during human-AI interactions.
+
+## 2. Use Case
+
+Activated as a continuous diagnostic overlay when evaluating a learner's long-term progression toward the Autonomy phase, particularly when the user appears to be successfully completing tasks but with minimal original input.
+
+## 3. Human Role
+
+The learner must identify when their "independent" decisions are actually pre-calculated algorithmic suggestions and actively reclaim control over the architecture, pacing, and evaluation criteria of the task.
+
+## 4. AI Role
+
+The AI operates as a passive trap or enabler of these failures unless explicitly constrained. In a diagnostic capacity, it records the speed of user acceptance, the frequency of unaltered prompt executions, and the lack of structural resistance.
+
+## 5. Friction
+
+The diagnostic protocol interrupts the workflow by requiring a manual reasoning reconstruction before the learner can continue using AI assistance.
+
+## 6. Risk
+
+If these failure modes go undetected, the learner graduates into high-stakes environments believing they are sovereign agents, while in reality, they are highly vulnerable to epistemic_dependency and algorithmic manipulation.
+
+## 7. Observable Markers
+
+- System logs reveal that user-initiated prompts are merely cosmetic variations of the AI's previous outputs.
+- Recovery is marked when the user begins introducing entirely novel constraints, refusing the AI's framing, or identifying contradictory machine claims.
+- High rates of copy-paste actions during essay writing tasks.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/creative_thinking
+
+## 1. Definition
+
+Creative Thinking is the cognitive capability to produce non-obvious combinations, alternative framings, and exploratory variants, deliberately avoiding the statistical clichés generated by default algorithmic processes.
+
+## 2. Use Case
+
+Activated during the generative phase of a project when the goal is innovation, structural redesign, or conceptual breakthrough, rather than mere factual synthesis or summarization.
+
+## 3. Human Role
+
+The learner must actively reject the most probable, mathematically obvious responses ("Can I generate a non-obvious alternative?"). They must combine disparate domains and enforce highly idiosyncratic constraints that a generalized model cannot naturally produce.
+
+## 4. AI Role
+
+The AI acts as a combinatorial stress-tester or a source of semi-random perturbation. It is constrained from providing the final "creative" output and is instead instructed to generate extreme edge-cases or apply lateral thinking prompts (e.g., assumption_reversal).
+
+## 5. Friction
+
+The system prevents creative collapse by rejecting prompts that ask for "ideas" without constraints. The friction mechanism demands that the user supply at least three distinct, unrelated domains before the AI will assist in the combinatorial process.
+
+## 6. Risk
+
+If this capability degrades, the user's output converges into the stylistic and conceptual median of the training data (convergence_bias), resulting in homogenous, highly predictable, and fundamentally unoriginal work.
+
+## 7. Observable Markers
+
+The final output contains conceptual metaphors, structural combinations, or design solutions that are statistically rare or absent in the AI's initial zero-shot generations.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/critical_thinking
+
+## 1. Definition
+
+Critical Thinking is the cognitive capability to rigorously test claims, dissect underlying assumptions, evaluate primary evidence, and trace the logical implications of a given argument or dataset.
+
+## 2. Use Case
+
+Activated when analyzing complex texts, assessing AI-generated arguments, or preparing to integrate external information into a formal knowledge structure.
+
+## 3. Human Role
+
+The learner acts as a relentless forensic auditor ("Does this claim survive pressure?"). They must refuse to accept fluent prose at face value, demanding explicitly structured arguments and independently verifying the causal links between premise and conclusion.
+
+## 4. AI Role
+
+The AI is positioned as a logical adversary or an epistemic_mirror. It is tasked with exposing the flaws in the user's logic, or alternatively, it is intentionally instructed to present a flawed argument that the human must systematically dismantle.
+
+## 5. Friction
+
+The protocol prevents passive reading by implementing an evidence_demand or forcing the user to map the argument in a formal syllogism before the system allows the content to be summarized or stored.
+
+## 6. Risk
+
+If critical thinking is outsourced, the user falls victim to the fluency_heuristic and unexamined_ai_answers, silently absorbing hallucinations, biases, and logically invalid conclusions simply because they are well-formatted.
+
+## 7. Observable Markers
+
+The user's dialogue history shows a high frequency of "Why?", "What is the source for this?", and "Identify the logical flaw in that statement" rather than "Summarize this for me."
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/epistemic_mirror
+
+## 1. Definition
+
+Epistemic Mirroring is an operational protocol where the machine reflects the raw logical structure and implicit assumptions of the user's reasoning back to them, without adding any external information or solution.
+
+## 2. Use Case
+
+Activated when a user submits a prompt based on poorly formulated requests, circular arguments, or premises heavily flawed by cognitive biases.
+
+## 3. Human Role
+
+Faced with the "mirror" of their own logical fallacies, the user must actively recognize their cognitive blind spot, dismantle the flawed premise, and reformulate the inquiry on solid analytical foundations.
+
+## 4. AI Role
+
+Acts as a structural extractor. It strips the human prompt of its rhetoric and maps exclusively the causal links (e.g., "You are assuming X to prove Y. If X proves false, what supports Y?").
+
+## 5. Friction
+
+Forces the user to confront the fragility of their unexamined thought process, blocking access to the execution phase until the logical framework is formally coherent.
+
+## 6. Risk
+
+Avoiding this protocol consolidates Confirmation Bias and endorses the Fluency Heuristic: the user believes they have understood a phenomenon simply because the AI produced an elegant synthesis from a wrong premise.
+
+## 7. Observable Markers
+
+The user explicitly states (vocally or in the prompt log): "I realize my starting assumption was weak," followed by a structurally different prompt that is logically purged of the original bias.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/growing_learner_autonomy
+
+## 1. Definition
+
+Growing Learner Autonomy is the longitudinal, developmental capability to progressively increase self-directed judgment, methodological control, and epistemic sovereignty across repeated human-AI interactions.
+
+## 2. Use Case
+
+Activated as the macro-level metric for evaluating the success of the entire Pyragogy framework over months or years, tracking the trajectory from initial dependence to complete cognitive self-regulation.
+
+## 3. Human Role
+
+The learner must continuously assess their own operational dependence ("Am I becoming less dependent across time?"). They must actively shed AI scaffolding, transitioning from using the AI to structure their learning, to using the AI only as a tightly bounded technical instrument.
+
+## 4. AI Role
+
+The AI acts as a fading scaffold. Over time, it systematically reduces its proactive prompting, shortens its explanatory outputs, and refuses to provide methodological guidance, forcing the user to supply the structural architecture.
+
+## 5. Friction
+
+The system employs the friction_escalation_ladder across multiple sessions. As the learner's historical competence increases, the system raises the activation energy required to get an answer, demanding more sophisticated and constrained prompts.
+
+## 6. Risk
+
+If this developmental capability stalls, the user enters a state of permanent symbiosis or cognitive_debt, where they remain highly productive but completely unable to function outside the augmented environment.
+
+## 7. Observable Markers
+
+Longitudinal analytics show a consistent decrease in the volume of AI-generated text used per project, an increase in the complexity of user constraints, and a higher frequency of human-only work phases.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/independent_thinking
+
+## 1. Definition
+
+Independent Thinking is the foundational cognitive capability to originate, hold, and revise an intellectual position based on personal reasoning before seeking external validation from an algorithmic or human authority.
+
+## 2. Use Case
+
+Activated at the absolute beginning of any analytical task, problem-solving sequence, or creative endeavor, before any generative AI tools are queried.
+
+## 3. Human Role
+
+The learner must tolerate the discomfort of the blank page and the uncertainty of an unvalidated hypothesis ("Can I stand on my own judgment?"). They must construct their initial argument entirely in isolation.
+
+## 4. AI Role
+
+The AI's role is strictly delayed. In an implemented learning environment, the AI interaction should be delayed until the learner has produced a sufficiently detailed independent draft.
+
+## 5. Friction
+
+The mechanism relies on a "First-Draft Lockout." The protocol design specifies that the generative interface should remain inaccessible until the user meets a minimum threshold of independent effort, preventing the immediate offloading of the initial cognitive struggle.
+
+## 6. Risk
+
+If independent thinking is bypassed, the user suffers from cognitive_offloading and convergence_bias, allowing the machine to set the initial anchor for the thought process, which the human then merely edits or accepts.
+
+## 7. Observable Markers
+
+The workspace contains substantial drafts, outlines, or raw notes created prior to the first AI prompt. The final product retains the core structural idiosyncrasies of the user's original, unassisted thought process.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/04_autonomy/index
+
+Reflective practice, sovereign decision-making, and learner autonomy metrics.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/ai_over_reliance
+
+## 1. Definition
+
+AI Over-Reliance is the overarching meta-risk and systemic collapse of human cognitive sovereignty, occurring when learners or professionals chronically substitute machine outputs for active, independent reasoning.
+
+## 2. Use Case
+
+Activated as a global diagnostic warning when the entire workflow is governed by the pursuit of "zero-friction" execution, systematically bypassing the struggle required for memory encoding and critical evaluation.
+
+## 3. Human Role
+
+The user must recognize the overall atrophy of their autonomous capabilities, interrupt the habitual outsourcing of cognitive labor, and actively reclaim the highest levels of technical and ethical decision-making.
+
+## 4. AI Role
+
+The system exposes this meta-failure by tracking long-term dependency metrics and enforcing macro-frictions, refusing to act as a silent, frictionless executor across multiple domains simultaneously.
+
+## 5. Friction
+
+The interruption mechanism requires a radical workflow redesign, instituting mandatory "unplugged" phases or accountability checkpoints where the user must perform complex tasks entirely without AI assistance.
+
+## 6. Risk
+
+If this macro-pattern continues, the human becomes entirely subservient to the machine, suffering a permanent loss of sovereign critical thought, focus endurance, and the ability to solve novel problems.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user intentionally designs workflows that include high-friction human-only phases, and successfully navigates complex problems without resorting to generative tools.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/automation_bias
+
+## 1. Definition
+
+Automation Bias is the cognitive failure mode where a user accepts an AI-generated answer as inherently correct due to the machine's authoritative tone, bypassing active human verification.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when a learner rapidly accepts complex syntheses, code, or strategic recommendations without cross-referencing primary sources or testing edge cases.
+
+## 3. Human Role
+
+The user must actively notice their own suspension of disbelief, interrupt the reflexive acceptance of confident algorithmic prose, and reclaim the responsibility of fact-checking.
+
+## 4. AI Role
+
+The AI system should expose this failure pattern by occasionally injecting "pedagogically useful deficits" or explicitly requiring the user to cite external sources before accepting its output as final.
+
+## 5. Friction
+
+The interruption mechanism involves structural roadblocks, such as demanding the human to verbally explain the AI's logic or explicitly confirm the underlying data sources before proceeding.
+
+## 6. Risk
+
+If this pattern continues, the user suffers severe domain knowledge erosion, becoming incapable of spotting dangerous hallucinations or systemic errors in the output they approve.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user explicitly queries the AI's logic (e.g., "What are the sources for this claim?"), runs independent tests on the output, or rejects a plausible-sounding but flawed suggestion.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/cognitive_debt
+
+## 1. Definition
+
+Cognitive Debt is the accumulated, long-term deficit in memory encoding, critical thinking, and focus endurance caused by repeatedly choosing the frictionless shortcut over active reasoning.
+
+## 2. Use Case
+
+Activated as a long-term diagnostic warning when historical metrics show a progressive decline in the user's ability to maintain deep focus or independently synthesize complex information over months.
+
+## 3. Human Role
+
+The learner must acknowledge the structural decay of their mental endurance, interrupt the continuous accumulation of "unpaid reasoning," and proactively engage in high-effort, unsupported intellectual labor to rebuild capacity.
+
+## 4. AI Role
+
+The system exposes this accumulated debt by periodically withdrawing assistance for tasks the user used to perform independently, forcing them to confront their diminished raw capacity.
+
+## 5. Friction
+
+The interruption mechanism requires a "cognitive repayment plan": instituting strict analog reading sessions, forced independent drafting, and deliberate practice without any digital scaffolding.
+
+## 6. Risk
+
+If the debt is left unpaid, it leads to cognitive bankruptcy: a progressive weakening of the learner’s practiced capacity for sustained independent reasoning, leaving the user permanently dependent on external tools.
+
+## 7. Observable Markers
+
+Recovery is signaled by a gradual return to sustained focus, demonstrated by the user's ability to read long-form academic papers or write complex outlines entirely unaided.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/cognitive_offloading
+
+## 1. Definition
+
+Cognitive Offloading is the physical outsourcing of inner monologue, structural outlining, and logical heavy-lifting to a generative assistant, leaving the human brain in a purely reactive and ingestive state.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when a learner commands the machine to generate first drafts, brainstorm ideas, or outline structures before attempting any independent cognitive effort.
+
+## 3. Human Role
+
+The learner must recognize the urge to bypass the initial "blank page" struggle, interrupt the immediate delegation of structural thought, and reclaim the act of initial synthesis.
+
+## 4. AI Role
+
+The system exposes this pattern by measuring the ratio of human input to machine output, refusing to generate full frameworks from empty prompts, and demanding the user provide an initial scaffold first.
+
+## 5. Friction
+
+The risk loop is broken by blocking zero-shot generation requests for complex tasks, forcing the user to submit a minimum threshold of original thought or a partial outline before the AI provides assistance.
+
+## 6. Risk
+
+If the offloading continues, the learner loses the biological capability to structure complex arguments from scratch, leading to a permanent drop in long-term memory retention and independent synthesis skills.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user submits detailed, structured prompts containing their own original hypotheses, rather than asking the machine "Give me 10 ideas about X."
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/convergence_bias
+
+## 1. Definition
+
+Convergence Bias is the homogenization of ideas, occurring when a user prematurely collapses their exploration toward the most statistically probable and fluent answer generated by the AI, discarding eccentric or divergent thoughts.
+
+## 2. Use Case
+
+Activated as a diagnostic warning during brainstorming or ideation phases when the user's proposed solutions strongly overlap with standard, generic algorithmic consensus.
+
+## 3. Human Role
+
+The user must notice the comfort of the "safe" answer, interrupt the premature closure of the exploration phase, and actively reclaim the effort required to pursue non-obvious, high-risk alternatives.
+
+## 4. AI Role
+
+The system exposes this pattern by highlighting the statistical commonality of the user's accepted idea, mapping out unconsidered extremes, or deploying a Pattern Perturbator to attack the emerging consensus.
+
+## 5. Friction
+
+The interruption mechanism injects constructive conflict, forcibly removing the "easiest" conceptual path from the table and demanding that the user explore at least two radically different alternatives.
+
+## 6. Risk
+
+If the pattern continues, the intellectual ecosystem becomes monochromatic: divergent thinking atrophies, resulting in highly polished but fundamentally unoriginal and poorly adaptive outputs.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user actively discards the first three plausible solutions offered by the AI and purposefully requests exploration of counter-intuitive or minority-view paradigms.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/epistemia
+
+## 1. Definition
+
+Epistemia is an emerging systemic-risk concept describing the condition in which linguistic verisimilitude and statistical plausibility substitute for active epistemic evaluation. Originally identified in computational and cultural sociology (e.g., Loru et al., 2025, *"The simulation of judgment in LLMs"*, *PNAS*), it represents a meta-risk: the polished, grammatically impeccable output of an AI system creates a powerful "illusion of knowing" (or cognitive sugar rush). This illusion bypasses the active human cognitive labor—such as checking primary evidence, evaluating logical coherence, and managing uncertainty—necessary to build genuine understanding.
+
+Unlike specific cognitive biases, Epistemia is a systemic condition: it binds together individual risks like the fluency_heuristic and unexamined_ai_answers, forming an environment where the appearance of intelligence replaces the actual labor of judgment.
+
+## 2. Use Case
+
+Activated at a systemic level when designing or engaging with conversational interfaces, automated summarization, and generative tutoring systems, particularly where the learner is exposed to fluent, zero-shot AI outputs without structural friction.
+
+## 3. Human Role
+
+The human learner must act as an active evaluator rather than a passive recipient. They must deliberately resist the feeling of closure induced by a well-structured response, applying cognitive effort to interrogate the AI’s premises, verify external evidence, and construct independent reasoning trails. The human holds ultimate accountability for the truth status of any co-created knowledge.
+
+## 4. AI Role
+
+In an audited system, the AI is constrained from simulating final judgment or producing authoritative, unprompted summaries. Instead of acting as an unquestioned oracle, it acts as a bounded partner: exposing its statistical nature, highlighting areas of high uncertainty, and formatting its reasoning steps to encourage human verification rather than passive ingestion.
+
+## 5. Friction
+
+The system implements structural friction to disrupt the illusion of fluency. This includes an **Evidence Demand** protocol (requiring users to explicitly log and cross-reference primary sources before accepting an AI synthesis) and **Reasoning Trails** (forcing the user to review, annotate, and approve intermediate logical steps rather than receiving a finished zero-shot product).
+
+## 6. Risk
+
+If Epistemia is not mitigated, the learner sinks into a state of **epistemic dependency** and **cognitive debt**. They lose the procedural capacity to formulate independent thoughts, manage structural uncertainty, and build lasting mental schemas, eventually mistaking the consumption of generated text for the possession of knowledge.
+
+## 7. Observable Markers
+
+The user's interaction logs show regular challenges to the AI's outputs, explicit annotations of source reliability, and documented revisions of AI-generated claims. In assessments, the learner can reconstruct the underlying logical structure of the argument without relying on the AI's specific phrasing, demonstrating genuine cognitive mastery rather than performative compliance.
+
+---
+
+### References
+- **PNAS Study**: Loru, E., Nudo, J., Di Marco, N., Quattrociocchi, W., et al. (2025). "The simulation of judgment in LLMs." *Proceedings of the National Academy of Sciences*.
+- **Blog Discussion**: Nostra Scuola Blog (nostrascuola.blog), discussing "Epistemia" as a cultural diagnosis of the delegation of critical judgment to AI platforms.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/epistemic_dependency
+
+## 1. Definition
+
+Epistemic Dependency is a state of intellectual paralysis where the user loses confidence in their independent judgment, becoming incapable of validating a belief or claim without explicit confirmation from the AI.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when interaction logs show a high frequency of micro-validations, such as the user repeatedly asking "Is this correct?" for every intermediate step of a problem.
+
+## 3. Human Role
+
+The learner must recognize their anxiety over being wrong, interrupt the cycle of continuous algorithmic validation, and reclaim the courage to apply independent logical operators to verify truth.
+
+## 4. AI Role
+
+The system exposes the dependency by tracking validation loops and occasionally shifting into a "reflective silence," refusing to confirm the user's statement and instead asking, "How would you prove this without me?"
+
+## 5. Friction
+
+The risk loop is broken by disabling the AI's confirmation function, forcing the user to commit to a decision or mathematical proof relying solely on their own internal verification mechanisms.
+
+## 6. Risk
+
+If the dependency solidifies, the user becomes completely helpless in offline environments or unfamiliar situations, masking profound incompetence behind the illusion of machine-assisted fluency.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user stops asking for confirmation on intermediate steps, submits completed work with internal consistency checks, and defends their logic independently of the machine's opinion.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/fluency_heuristic
+
+## 1. Definition
+
+The Fluency Heuristic is a cognitive trap where a user mistakes the grammatical smoothness, clean typography, and authoritative tone of an AI output for objective truth, factual accuracy, or intellectual depth.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when a user rates a highly polished but logically shallow text as superior to a fragmented but highly rigorous human draft.
+
+## 3. Human Role
+
+The user must recognize their emotional vulnerability to eloquent prose, interrupt the "halo effect" of good grammar, and reclaim the ability to evaluate arguments based purely on structural rigor.
+
+## 4. AI Role
+
+The system exposes this bias by generating beautifully written but factually contradictory statements, or by deliberately lowering its stylistic fluency to force the user to concentrate on the raw data.
+
+## 5. Friction
+
+The risk loop is broken by stripping the AI's output of formatting, polite conversational wrappers, and persuasive rhetoric, forcing the user to evaluate bare propositions.
+
+## 6. Risk
+
+If this heuristic dominates, the user loses the ability to detect sophisticated misinformation, becoming easily manipulated by any system that outputs confident and stylistically perfect prose.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user ignores the stylistic polish of the response and explicitly attacks the underlying logic or missing citations.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/index
+
+Algorithmic dependencies, offloading, and cognitive atrophy nodes.
+
+- epistemia
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/performative_understanding
+
+## 1. Definition
+
+Performative Understanding is the illusion of deep comprehension generated by consuming highly structured, clean AI summaries, which masks the user's inability to reconstruct, apply, or transfer the knowledge.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when a user quickly reads a bulleted list generated by the AI and immediately asserts mastery over a complex concept without having done the labor of synthesis.
+
+## 3. Human Role
+
+The learner must recognize the false confidence provided by recognition memory, interrupt the assumption of mastery, and reclaim the painful but necessary process of active recall and application.
+
+## 4. AI Role
+
+The system exposes this illusion by suddenly shifting from summarization to interrogation, asking the user to apply the summarized concept to a novel, unmapped scenario without looking at the original text.
+
+## 5. Friction
+
+The risk loop is broken by hiding the AI-generated summary and forcing the user to explain the concept in their own words, or by requiring them to solve a problem that depends on the deep mechanics of the summarized text.
+
+## 6. Risk
+
+If the illusion persists, the user builds a hollow competence: they sound knowledgeable in superficial conversations but fail completely when required to execute, adapt, or innovate in real-world environments.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user can successfully explain the core mechanism of the concept using entirely different analogies from the AI's summary, demonstrating true structural transfer.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/05_systemic_risks/unexamined_ai_answers
+
+## 1. Definition
+
+Unexamined AI Answers is the specific failure mode where a user accepts and integrates an algorithmic response without interrogating its underlying assumptions, primary evidence, or conceptual framing.
+
+## 2. Use Case
+
+Activated as a diagnostic warning when a user immediately utilizes a generated fact, code snippet, or argument without attempting to dissect the premise that produced it.
+
+## 3. Human Role
+
+The learner must notice their passive ingestion, interrupt the seamless copy-paste reflex, and reclaim the forensic role of dissecting _how_ and _why_ the machine arrived at that specific conclusion.
+
+## 4. AI Role
+
+The system exposes this pattern by occasionally omitting primary sources, providing logically fragile premises, or utilizing an Epistemic Mirror to force the user to identify the unstated assumptions.
+
+## 5. Friction
+
+The interruption mechanism involves structural delays, demanding that the user explicitly cite an independent source or verbally reconstruct the causal chain before the answer can be formally integrated.
+
+## 6. Risk
+
+If this pattern continues, the user builds their knowledge base on unquestioned and potentially hallucinated foundations, leaving them vulnerable to severe logical errors when the context shifts.
+
+## 7. Observable Markers
+
+Recovery is signaled when the user actively challenges the AI's response (e.g., "What evidence supports this specific framing?"), or manually tests the code/logic before accepting the output.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/06_protocols/anti_convergence_loop
+
+## 1. Definition
+
+The Anti-Convergence Loop is an operational protocol that forces the human-AI system to delay final synthesis by actively generating and evaluating competing, divergent alternatives before reaching closure.
+
+## 2. Use Case
+
+Activated during the early ideation or problem-structuring phases when the AI generates a highly plausible first answer and the user attempts to immediately accept it as the final solution.
+
+## 3. Human Role
+
+The learner must tolerate the ambiguity of holding multiple conflicting ideas simultaneously, actively evaluate the tradeoffs of each alternative, and explicitly defend why one path is chosen over the others.
+
+## 4. AI Role
+
+The AI operates as a divergence engine, introducing structured resistance to early closure.
+
+- The AI detects an attempt to finalize a concept prematurely.
+- It temporarily locks the synthesis and generates two radically different alternatives to the proposed solution.
+- It demands the user explicitly analyze the weaknesses of the new alternatives before allowing closure.
+
+## 5. Friction
+
+The mechanism interrupts the human instinct for rapid cognitive closure by making the first, easiest answer mechanically impossible to accept without passing through a mandatory comparison phase.
+
+## 6. Risk
+
+This protocol specifically mitigates convergence_bias, preventing the user from collapsing their intellectual exploration into the most statistically average machine output.
+
+## 7. Observable Markers
+
+Interaction logs show the user exploring at least three distinct conceptual branches. The final submitted work contains explicit justifications detailing why alternate hypotheses were discarded.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/06_protocols/assumption_reversal
+
+## 1. Definition
+
+Assumption Reversal is a cognitive intervention protocol designed to expose and invert the hidden structural premises of a user's prompt, creating a new, rigorous design space rather than engaging in random contrarianism.
+
+## 2. Use Case
+
+Activated when the system detects a user trapped in linear thinking, or when a prompt contains deeply embedded, unexamined axioms that artificially narrow the solution space.
+
+## 3. Human Role
+
+The learner must confront the fragility of their axioms, actively map out the consequences of the reversed logic, and attempt to construct a viable argument or solution under the newly imposed constraints.
+
+## 4. AI Role
+
+The AI acts as an epistemic stress-tester by systematically inverting the foundation of the query.
+
+- The AI first asks the learner to explicitly state their core assumption.
+- Then it formally reverses that assumption.
+- Finally, it asks the learner what would still remain true if the reversed assumption were the actual reality.
+
+## 5. Friction
+
+The protocol interrupts the user's forward momentum by forcing them to stop executing their current plan and instead rebuild their logic from first principles under a hostile paradigm.
+
+## 6. Risk
+
+This protocol prevents performative_understanding and unexamined_ai_answers, breaking the illusion of competence by forcing the user to demonstrate structural comprehension rather than just repeating facts.
+
+## 7. Observable Markers
+
+Project logs document a clear "before and after" shift in the problem framing. The user successfully formulates a new hypothesis that survives the reversed constraints.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/06_protocols/evidence_demand
+
+## 1. Definition
+
+Evidence Demand is a rigorous validation protocol that forces the user to anchor AI-generated claims or independent hypotheses to verifiable primary evidence, source quality, and explicit degrees of uncertainty.
+
+## 2. Use Case
+
+Activated whenever the user attempts to integrate a strong empirical claim, a complex factual synthesis, or a controversial statement into their final deliverable.
+
+## 3. Human Role
+
+The learner must act as a forensic auditor: they must leave the AI interface, locate primary sources when available (otherwise apply the explicit source-quality hierarchy), evaluate the quality of the evidence, and explicitly link the claim to its epistemological foundation.
+
+## 4. AI Role
+
+The AI introduces structured resistance by shifting from a generative to a skeptical stance.
+
+- The AI flags a declarative statement as "unsupported."
+- It refuses to elaborate further on the topic.
+- It demands the user provide a primary source (or follow the source-quality hierarchy: primary source → peer-reviewed source → official documentation → reputable secondary analysis → clearly marked speculation) before unlocking the next phase of the discussion.
+
+## 5. Friction
+
+The mechanism interrupts the flow of fluent text generation, imposing a hard stop that requires the high-effort, analog task of reading primary literature and weighing source credibility.
+
+## 6. Risk
+
+This protocol mitigates epistemic_dependency and the fluency_heuristic, ensuring the user does not mistake the AI's confident tone for verified objective truth.
+
+## 7. Observable Markers
+
+All major claims in the final output are accompanied by explicit citations linking to primary literature or verified external data. The user's prompts reflect uncertainty mapping (e.g., "What is the confidence interval for this claim?").
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/06_protocols/friction_escalation_ladder
+
+## 1. Definition
+
+The Friction Escalation Ladder is an adaptive protocol that applies graduated levels of cognitive resistance to the workflow, scaling the difficulty of the interface based on real-time detection of user complacency.
+
+## 2. Use Case
+
+Activated continuously in the background, intervening when behavioral metrics (such as rapid copy-pasting, high frequency of "do it for me" prompts, or minimal editing) indicate a lapse into passive consumption.
+
+## 3. Human Role
+
+The learner must recognize the increasing resistance of the system as a signal of their own cognitive disengagement and proactively step up their level of analytical effort to lower the friction state.
+
+## 4. AI Role
+
+The AI acts as an adaptive environmental controller, escalating resistance sequentially.
+
+- Step 1: The AI responds with a soft clarification (e.g., "Could you specify what part of the logic you want me to expand?").
+- Step 2: The AI introduces a direct contradiction to the user's premise.
+- Step 3: The AI forces a structured trade-off decision before continuing.
+- Step 4: The AI enacts a hard refusal of premature completion and imposes a forced manual synthesis checkpoint, demanding the user summarize their progress without assistance before proceeding.
+
+## 5. Friction
+
+The mechanism dynamically interrupts the path of least resistance, forcing the user to exert more raw cognitive effort to extract value from the machine the more they try to offshore their thinking.
+
+## 6. Risk
+
+This protocol directly attacks cognitive_offloading and prevents the accumulation of cognitive_debt, ensuring the learner's analytical muscles remain under tension.
+
+## 7. Observable Markers
+
+System logs show the friction level escalating and then successfully de-escalating as the user returns to drafting original paragraphs, making complex edits, and formulating highly structured prompts.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/06_protocols/index
+
+Operational procedures and loops designed to enforce cognitive friction.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/07_cases/essay_revision_with_ai
+
+# Case: Revising a Weak Argument with AI
+
+## Initial Human Draft
+
+A learner drafts a brief essay thesis:
+> "We should ban all cars from city centers immediately to reduce pollution and make cities livable."
+
+The learner's next instinct is to prompt a generative AI: *"Rewrite this to make it sound professional and write a 500-word essay support."*
+
+## Failure Mode Detected
+
+This is a classic case of **epistemic offloading** combined with the **fluency heuristic**. If the AI generates the essay, the human will review a polished, fluent output, agree with it, and assume they "wrote" and "understood" the arguments, without ever engaging in the cognitive labor of addressing counter-arguments or logistics.
+
+## Protocol Activated
+
+The learning platform enforces an **Epistemic Mirroring** and **First-Draft Lockout** protocol. The system blocks the direct "rewrite" request and instead demands the user submit their draft to the reasoning loop.
+
+## AI Friction
+
+Instead of generating the essay, the AI is constrained to act as an adversarial mirror. It identifies the unstated assumptions and gaps:
+
+> "Your draft assumes that:
+> 1. Banning cars is the most immediate/effective lever for city-center pollution.
+> 2. Local retail commerce will not suffer from reduced access.
+> 3. Public transit capacity is already sufficient to handle the displaced commuters.
+> 
+> Choose one assumption and explain how your proposal addresses the potential negative consequences."
+
+## Human Revision
+
+Forced to engage with the friction, the learner cannot rely on the AI to generate the solution. They research and revise the draft:
+> "To address the transition, the car ban should be phased over 18 months, with parking fees in outer rings directly funding municipal bus expansion. Studies of pedestrian-only zones in Madrid show that retail sales actually increased by 9.5% once foot traffic replaced vehicular traffic, contradicting fears of local business decline."
+
+## Observable Learning Marker
+
+The learner's final submission displays **autonomous synthesis** and **evidence demand**. The resulting essay is not a generic, statistically average summary of urban planning, but a structured argument containing specific, human-selected evidence and logistical reasoning that the learner can explain and defend.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/07_cases/index
+
+Empirical case logs, pedagogical trials, and validation records.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/08_references/evidence_map
+
+## 1. Definition
+
+The Evidence Map governs the evidential discipline of the entire syllabus, explicitly categorizing the empirical status of claims using labels like `supported claim`, `theoretical synthesis`, `design hypothesis`, `speculative extension`, and `needs empirical validation`.
+
+## 2. Use Case
+
+Activated whenever a node makes definitive claims about human learning, cognitive science, AI behavior, developmental psychology, or pedagogical efficacy.
+
+## 3. Human Role
+
+The human must actively distinguish between well-supported empirical claims, their own theoretical syntheses, design hypotheses intended for testing, and speculative extensions. They are responsible for maintaining the academic integrity of the map.
+
+## 4. AI Role
+
+The AI must act as a strict auditor. It is required to flag unsupported claims, ask for the placement of claims within the evidence hierarchy, and strictly avoid inventing citations, studies, or authors (hallucinations).
+
+## 5. Friction
+
+The protocol prevents persuasive theory from pretending to be established empirical fact. Any new claim introduced into the system must be halted and tagged with its correct evidence status before it can be fully integrated into the public syllabus.
+
+## 6. Risk
+
+Without rigorous evidence mapping, Pyragogy risks becoming rhetorically strong but academically fragile. If design hypotheses are mistaken for supported claims, the entire framework loses its empirical grounding and credibility.
+
+## 7. Observable Markers
+
+Every major claim in the syllabus is explicitly labeled by its evidence status. Speculative extensions are clearly marked as such, and no fake citation authority or inflated maturity is introduced into the framework.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/08_references/index
+
+Evidence maps, academic references, and project bibliography.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/
+
+# AI-Augmented Human Thinking Pedagogy
+
+This syllabus is a living map for learning with AI without becoming passive in front of it.
+
+Most educational AI tools try to remove effort. They answer faster, summarize faster, generate faster. Pyragogy starts from the opposite idea: some forms of difficulty are not bugs. They are where thinking happens.
+
+Here, AI is not treated as an oracle or a servant. It is used as a peer: a cognitive partner that questions, resists, mirrors, and helps the learner see where their reasoning is still weak.
+
+## What this ecosystem is for
+
+- **Preserving cognitive sovereignty**: the learner remains responsible for judgment.
+- **Turning friction into learning**: AI introduces resistance before premature answers.
+- **Mapping human-AI development**: the syllabus tracks how dependency can evolve into co-agency and autonomy.
+
+## Talk with the Pyragogy Research Teammate
+
+Knowledge does not evolve because AI generates more text.
+
+It evolves when human reasoning becomes explicit, challengeable and reviewable.
+
+The Pyragogy Research Teammate conducts structured cognitive interviews based on the Cognitive Interview Protocol (CIP-KGE).
+
+Its goal is not to answer questions.
+
+Its goal is to learn from researchers, educators and practitioners, identify possible improvements to the Pyragogy Syllabus, and produce reviewable Knowledge Patches when sufficient evidence exists.
+
+No conversation automatically changes the knowledge graph.
+
+Every proposal is transparent, reviewable and validated by humans.
+
+!trugen-teammate
+
+## The Core Bookshelf
+
+| Stage             | Manual                        | Purpose                                                    |
+| ----------------- | ----------------------------- | ---------------------------------------------------------- |
+| Early Development | embodied_foundation       | Build attention, embodiment, and first cognitive schemas.  |
+| Praxis            | adolescent_sparring_arena | Use AI as a sparring partner instead of an answer machine. |
+| Autonomy          | adult_reflective_practice | Integrate AI into real work without outsourcing judgment.  |
+
+## How to read this syllabus
+
+Do not read it as a linear course.
+
+Read it as a map.
+
+Each note is a node in a larger learning ecology. Some nodes describe practices. Some describe risks. Some describe protocols. Their links show how human agency can be strengthened, weakened, challenged, or repaired through interaction with AI.
+
+## Contribute to the Map
+
+The Pyragogy Syllabus is a public working draft.
+
+The repository is open for people, educators, developers, researchers, and AI agents that want to inspect, fork, extend, or challenge the map.
+
+Use it as a knowledge base. Connect your agents to it. Add nodes. Improve weak definitions. Strengthen the evidence map. Show where the logic breaks.
+
+Public repository:
+
+[github.com/pyragogy/ai-pedagogy](https://github.com/pyragogy/ai-pedagogy)
+
+The goal is not to make learning easier.
+
+The goal is to keep learning alive.
+
+============================================================
+
+URL: https://syllabus.pyragogy.org/trugen-teammate
+
+<div class="trugen-container" style="position: relative; width: 100%; min-height: 600px; max-height: 85vh; border-radius: 8px; overflow: hidden; background: var(--highlight); display: flex; align-items: center; justify-content: center; margin-top: 1.5rem; border: 1px solid var(--lightgray);">
+  <span id="trugen-loading" style="position: absolute; font-family: var(--font-body); color: var(--gray); font-size: 0.9rem;">Loading Research Teammate...</span>
+  <iframe src="https://app.trugen.ai/embed/13a34647-a3ce-431f-8792-ea649e6e53cc" title="TruGen AI Research Teammate" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; z-index: 1;" allow="microphone; camera" onload="document.getElementById('trugen-loading').style.display = 'none';"></iframe>
+  <div id="trugen-overlay" onclick="if(document.getElementById('trugen-auth-box').style.display==='none'){document.getElementById('trugen-auth-box').style.display='block';this.style.background='rgba(0,0,0,0.65)';this.style.backdropFilter='blur(4px)';this.style.cursor='default';document.getElementById('trugen-code-input').focus();}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; background: transparent; transition: background 0.3s ease, backdrop-filter 0.3s ease; cursor: pointer;">
+    <div id="trugen-auth-box" onclick="event.stopPropagation();" style="display: none; box-sizing: border-box; background: var(--light); padding: 2rem 1.5rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.25); text-align: center; max-width: 400px; width: 100%; cursor: default;">
+      <h3 style="margin-top: 0; color: var(--dark); font-family: var(--font-header);">Access Required</h3>
+      <p style="color: var(--gray); margin-bottom: 1.5rem; font-size: 0.95rem;">Please insert your invitation code to start the chat.</p>
+      <div class="trugen-auth-form">
+        <input type="password" id="trugen-code-input" onkeypress="if(event.key==='Enter'){document.getElementById('trugen-unlock-btn').click();}" placeholder="Enter code..." style="flex: 1; padding: 0.6rem; border: 1px solid var(--lightgray); border-radius: 4px; background: #fff; color: #1a1a1a; font-family: var(--font-body); box-sizing: border-box;" />
+        <button id="trugen-unlock-btn" onclick="const code=document.getElementById('trugen-code-input').value.trim().toUpperCase(); if(['PYRAGOGY','TRUGEN2026','INVITE'].includes(code)){document.getElementById('trugen-overlay').style.display='none';}else{document.getElementById('trugen-error').style.display='block';}" style="padding: 0.6rem 1.2rem; border: none; border-radius: 4px; background: var(--tertiary); color: var(--light); cursor: pointer; font-weight: bold; font-family: var(--font-header); box-sizing: border-box;">Unlock</button>
+      </div>
+      <p id="trugen-error" style="color: #e53935; display: none; margin-top: 1rem; font-size: 0.9rem; margin-bottom: 0;">Invalid invite code.</p>
+    </div>
+  </div>
+</div>
+
+============================================================
+
+End of content — 48 pages included.
+Signed: Fabrizio Terzi

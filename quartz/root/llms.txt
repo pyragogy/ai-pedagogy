@@ -1,0 +1,58 @@
+# Pyragogy Syllabus — AI-Augmented Human Thinking Pedagogy
+# https://syllabus.pyragogy.org
+#
+# A living operational framework for human-AI learning,
+# cognitive friction, and epistemic autonomy.
+#
+# Signed: Fabrizio Terzi
+# Date  : 2026-08-29
+
+## About
+
+The Pyragogy Syllabus is a structured operational framework for learning
+with AI without becoming passive in front of it. AI is used as a cognitive
+partner that questions, resists, mirrors, and helps the learner see where
+their reasoning is still weak.
+
+Three axes define the learning ecology:
+- **Epistemic Sovereignty**: learner remains responsible for judgment
+- **Desirable Friction**: AI introduces resistance before premature answers
+- **Developmental Arc**: dependency → co-agency → autonomy
+
+## Core sections
+
+- Foundations:     https://syllabus.pyragogy.org/01_foundations/
+- Ontogeny:        https://syllabus.pyragogy.org/02_ontogeny/
+- Praxis:          https://syllabus.pyragogy.org/03_praxis/
+- Autonomy:        https://syllabus.pyragogy.org/04_autonomy/
+- Systemic Risks:  https://syllabus.pyragogy.org/05_systemic_risks/
+- Protocols:       https://syllabus.pyragogy.org/06_protocols/
+- Case Studies:    https://syllabus.pyragogy.org/07_cases/
+- References:      https://syllabus.pyragogy.org/08_references/
+- Meta / Audit:    https://syllabus.pyragogy.org/00_meta/
+
+## Key resources
+
+| Resource | URL |
+|---|---|
+| Cognitive Interview Protocol (CIP-KGE) | https://syllabus.pyragogy.org/06_protocols/cognitive_interview_protocol |
+| Embodied Foundation | https://syllabus.pyragogy.org/02_ontogeny/embodied_foundation |
+| Adolescent Sparring Arena | https://syllabus.pyragogy.org/03_praxis/adolescent_sparring_arena |
+| Adult Reflective Practice | https://syllabus.pyragogy.org/04_autonomy/adult_reflective_practice |
+| TruGen AI Research Teammate | https://syllabus.pyragogy.org/trugen-teammate |
+| Blueprint & Axes | https://syllabus.pyragogy.org/01_foundations/blueprint |
+| AI Friction Ontology | https://syllabus.pyragogy.org/01_foundations/cartesian_axes |
+| System Audit Report | https://syllabus.pyragogy.org/00_meta/system_audit_report |
+
+## Full content
+
+For the complete text of the syllabus (all pages concatenated),
+see: https://syllabus.pyragogy.org/llms-full.txt
+
+## Repository
+
+GitHub: https://github.com/pyragogy/ai-pedagogy
+
+## License
+
+Open working draft — contributions welcome via GitHub.

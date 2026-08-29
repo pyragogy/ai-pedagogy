@@ -113,6 +113,36 @@ export default (() => {
           window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
           plausible.init()
         ` }} />
+
+        {/* Schema.org JSON-LD */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Pyragogy",
+          "url": "https://${cfg.baseUrl}",
+          "description": "${description.replace(/"/g, '\"')}",
+          "founder": {
+            "@type": "Person",
+            "name": "Fabrizio Terzi"
+          }
+        }
+        ` }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "${title}",
+          "url": "https://${cfg.baseUrl}",
+          "description": "${description.replace(/"/g, '\"')}",
+          "inLanguage": "${cfg.locale}",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://${cfg.baseUrl}/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+        ` }} />
       </head>
     )
   }

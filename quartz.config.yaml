@@ -1,13 +1,13 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "AI-Augmented Human Thinking Pedagogy "
-  pageTitleSuffix: ""
+  pageTitle: "Pyragogy Syllabus — AI-Augmented Human Thinking Pedagogy"
+  pageTitleSuffix: " | Pyragogy"
   enableSPA: true
   enablePopovers: true
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: localhost
+  baseUrl: syllabus.pyragogy.org
   ignorePatterns:
     - private
     - templates

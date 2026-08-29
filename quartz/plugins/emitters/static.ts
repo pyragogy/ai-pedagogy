@@ -18,6 +18,22 @@ export const Static: QuartzEmitterPlugin = () => ({
       await fs.promises.copyFile(src, dest)
       yield dest
     }
+
+    // Also copy root-level static files from quartz/root/ to output root
+    const rootPath = joinSegments(QUARTZ, "root")
+    try {
+      await fs.promises.access(rootPath)
+      const rootFps = await glob("**", rootPath, cfg.configuration.ignorePatterns)
+      for (const fp of rootFps) {
+        const src = joinSegments(rootPath, fp) as FilePath
+        const dest = joinSegments(argv.output, fp) as FilePath
+        await fs.promises.mkdir(dirname(dest), { recursive: true })
+        await fs.promises.copyFile(src, dest)
+        yield dest
+      }
+    } catch {
+      // quartz/root/ does not exist — skip
+    }
   },
   async *partialEmit() {},
 })
