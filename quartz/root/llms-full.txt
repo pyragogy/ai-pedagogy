@@ -1,6 +1,6 @@
 # Pyragogy Syllabus — Full Content
 # https://syllabus.pyragogy.org
-# Generated: 2026-08-29
+# Generated: 2026-08-31
 # Signed: Fabrizio Terzi
 
 This file contains the full text of every public page in the Pyragogy Syllabus.

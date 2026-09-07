@@ -9,7 +9,22 @@ const NotFound: QuartzComponent = ({ cfg, ctx }: QuartzComponentProps) => {
     <article class="popover-hint">
       <h1>404</h1>
       <p>{i18n(cfg.locale).pages.error.notFound}</p>
-      <a href={baseDir}>{i18n(cfg.locale).pages.error.home}</a>
+      <p style={{ marginTop: "1rem" }}>
+        Try searching for what you need, or browse the syllabus from the
+        homepage.
+      </p>
+      <ul style={{ marginTop: "0.75rem", listStyle: "none", padding: 0 }}>
+        <li>
+          <a href={baseDir}>
+            {i18n(cfg.locale).pages.error.home}
+          </a>
+        </li>
+        <li style={{ marginTop: "0.5rem" }}>
+          <a href={`${baseDir}llms.txt`}>
+            Full site index (llms.txt)
+          </a>
+        </li>
+      </ul>
       <script
         dangerouslySetInnerHTML={{
           __html: `

@@ -6,6 +6,7 @@ configuration:
   enablePopovers: true
   analytics:
     provider: plausible
+    host: https://plausible.pyragogy.org
   locale: en-US
   baseUrl: syllabus.pyragogy.org
   ignorePatterns:

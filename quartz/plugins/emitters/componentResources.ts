@@ -114,19 +114,13 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
   } else if (cfg.analytics?.provider === "plausible") {
     const plausibleHost = cfg.analytics.host ?? "https://plausible.io"
     componentResources.afterDOMLoaded.push(`
-      const plausibleScript = document.createElement('script');
-      plausibleScript.src = '${plausibleHost}/js/script.manual.js';
-      plausibleScript.setAttribute('data-domain', location.hostname);
-      plausibleScript.defer = true;
-      plausibleScript.onload = () => {
-        window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments); };
-        plausible('pageview');
-        document.addEventListener('nav', () => {
-          plausible('pageview');
-        });
-      };
-
-      document.head.appendChild(plausibleScript);
+      var ps = document.createElement('script');
+      ps.src = '${plausibleHost}/js/pa-BHDyoVcCbuW8VrR4mNqrg.js';
+      ps.async = true;
+      document.head.appendChild(ps);
+      var pi = document.createElement('script');
+      pi.textContent = 'window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()';
+      document.head.appendChild(pi);
     `)
   } else if (cfg.analytics?.provider === "umami") {
     componentResources.afterDOMLoaded.push(`
