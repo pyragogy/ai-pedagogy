@@ -26,4 +26,4 @@ jobs:
         run: npm ci
 
       - name: Build Syllabus
-        run: npm run build
+        run: bash build.sh
