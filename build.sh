@@ -1,10 +1,13 @@
 #!/bin/bash
 # Build script for Cloudflare Pages / local builds
-# Generates SEO/GEO assets and builds the Quartz site.
+# Generates Quartz plugins, SEO/GEO assets, and the static site.
 #
 # Signed: Fabrizio Terzi
 
-set -e
+set -euo pipefail
+
+echo "→ Installing Quartz plugins..."
+npm run install-plugins
 
 echo "→ Generating llms-full.txt..."
 node scripts/generate-llms-full.mjs
