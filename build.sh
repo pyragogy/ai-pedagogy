@@ -9,6 +9,12 @@ set -euo pipefail
 echo "→ Installing Quartz plugins..."
 npm run install-plugins
 
+# Dependabot moved @quartz-community/utils to a GitHub source revision that
+# advertises dist/index.js but does not ship the compiled dist/ directory.
+# Use the published, reproducible npm artifact that contains the build output.
+echo "→ Ensuring a buildable Quartz utility package..."
+npm install --no-save --package-lock=false @quartz-community/utils@0.1.0
+
 echo "→ Generating llms-full.txt..."
 node scripts/generate-llms-full.mjs
 
