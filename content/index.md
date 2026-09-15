@@ -17,6 +17,30 @@ Here, AI is not treated as an oracle or a servant. It is used as a peer: a cogni
 - **Turning friction into learning**: AI introduces resistance before premature answers.
 - **Mapping human-AI development**: the syllabus tracks how dependency can evolve into co-agency and autonomy.
 
+## From map to evidence
+
+The Syllabus says what Pyragogy currently proposes. It should not be the final judge of its own ideas.
+
+| Layer | Question |
+| --- | --- |
+| **Syllabus** | What are we proposing? |
+| **Cognitive Interview Protocol** | What new knowledge is being proposed, and can the change be reviewed? |
+| **UnPeeragogy** | Where does theory meet friction, failure, or counterevidence? |
+| **Working Patterns** | What interventions appear relevant, under which conditions, and how strong is the evidence? |
+
+The aim is not to make every node look proven. It is to make its **research state visible**: what is supported, what is still a design hypothesis, what complicates it, and what remains unknown.
+
+Read [[evidence_friction|Evidence & Friction: How the Syllabus Learns]].
+
+> [!note] Pyragogy Interviews — pilot
+> **A conversation that changes the map.**
+>
+> We are preparing research conversations in which an AI agent interviews educators, researchers, and practitioners about real experience with AI and learning. The conversation should end with something inspectable: a challenged claim, a new boundary condition, an open question, or a reviewable proposal for changing the map.
+>
+> Nothing changes automatically. The human remains responsible for accepting, rejecting, or revising the proposed Knowledge Patch.
+>
+> [[trugen-teammate|See how the Research Teammate works]] · [Interested in taking part?](mailto:info@pyragogy.org?subject=Pyragogy%20Interviews%20pilot)
+
 ## Talk with the Pyragogy Research Teammate
 
 Knowledge does not evolve because AI generates more text.

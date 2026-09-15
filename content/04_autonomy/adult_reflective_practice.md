@@ -47,3 +47,29 @@ The absence of this practice in teams leads to [[cognitive_debt]] and [[automati
 ## 7. Observable Markers
 
 The professional documents (in Git commits or release notes) the exact criteria by which the AI's output was validated, highlighting which portions were rejected or modified to fit the human context.
+
+## Research around this node
+
+**Current research state — design hypothesis / needs empirical validation.**
+
+The accountability checkpoint is a concrete Pyragogy intervention, but this node should not be read as evidence that the checkpoint itself improves professional judgment. The intervention and the risk it is intended to address must be evaluated separately.
+
+### Working Patterns
+
+Three human–AI research candidates are directly relevant:
+
+- **WP-AI001 — Friction Before Delegation** asks when a pre-delegation checkpoint improves judgment enough to justify its time and cognitive cost. Its failure hypotheses include ritual clicking and unnecessary friction.
+- **WP-AI011 — Name the Accountable Human Authority** asks whether named human oversight produces real control or merely ceremonial sign-off.
+- **WP-AI012 — Close the AI Advice Loop** asks groups to record what was tried and what happened, instead of treating advice as successful when it was merely accepted.
+
+These are **research candidates, not validated best practices**. See the [Working Patterns AI research agenda](https://github.com/pyragogy/working-patterns/blob/main/data/ai-patterns/candidates.json).
+
+### UnPeeragogy
+
+No direct UnPeeragogy evidence has yet been identified for this specific AI intervention. Its relevance here is methodological: compare declared control with actual implementation, look for abandoned or failed checkpoints, and preserve counterevidence instead of treating the intended workflow as the observed workflow.
+
+### Open question
+
+> **When does an accountability checkpoint improve judgment enough to justify its cost, and when does it become ritual approval?**
+
+See [[evidence_friction|Evidence & Friction]].

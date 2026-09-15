@@ -44,3 +44,29 @@ If this pattern continues, the user suffers severe domain knowledge erosion, bec
 ## 7. Observable Markers
 
 Recovery is signaled when the user explicitly queries the AI's logic (e.g., "What are the sources for this claim?"), runs independent tests on the output, or rejects a plausible-sounding but flawed suggestion.
+
+## Research around this node
+
+**Current research state — the risk and the proposed remedy must be separated.**
+
+Automation bias is an established research construct in human–automation interaction. The specific Pyragogy remedies proposed in this node — deliberately introduced deficits, mandatory source checks, explanation roadblocks — are **design hypotheses** unless separately supported by evidence.
+
+### Working Patterns
+
+Relevant human–AI research candidates include:
+
+- **WP-AI002 — Provenance Before Persuasion** asks which provenance displays actually change verification behaviour rather than simply making an answer look more credible.
+- **WP-AI007 — Separate Observation, Interpretation, and Recommendation** asks whether making those layers explicit improves error detection and disagreement quality.
+- **WP-AI001 — Friction Before Delegation** tests the broader assumption that forcing an explicit pause can improve judgment, while recording the risk of friction fatigue and ritual compliance.
+
+These are **research candidates, not validated best practices**. See the [Working Patterns AI research agenda](https://github.com/pyragogy/working-patterns/blob/main/data/ai-patterns/candidates.json).
+
+### UnPeeragogy
+
+No direct UnPeeragogy evidence has yet been identified for automation bias in AI-mediated learning. The useful connection is methodological: search for cases where a declared review process failed in practice, where authority was accepted without scrutiny, or where a supposed mitigation created a new failure mode.
+
+### Open question
+
+> **Which interventions actually change verification behaviour — and which merely add friction or increase the appearance of credibility?**
+
+See [[evidence_friction|Evidence & Friction]].
